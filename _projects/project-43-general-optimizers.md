@@ -10,11 +10,11 @@ team_leads:
   - Sean Park (University of Toronto) @seanhspark
   - Yeonghun Kang (University of Toronto) @yeonghun1675
 
-# contributors:
-#  - 
+contributors:
+Stefan P. Schmid, Ella Rajaonson, Sean Park, Mohammad Haddadnia, Yeonghun Kang, Felix Strieth-Kalthoff
 
-github: AC-BO-Hackathon/general-optimizers
-# youtube_video: <your-video-id>
+github: https://github.com/felix-s-k/general-optimizers.git
+youtube_video: wfSyIudptfc
 
 ---
 
