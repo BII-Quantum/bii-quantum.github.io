@@ -10,7 +10,7 @@ contributors:
   - Andy Anker (Technical University of Denmark (DTU))
   - Zhenzhu Li (Imperial College London) @lizhenzhupearl
 
-# github: AC-BO-Hackathon/<your-repo-name>
+github: https://github.com/A-Ijishakin/Multi-Objective-BO
 
 ---
 
