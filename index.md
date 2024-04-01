@@ -100,7 +100,7 @@ Prizes sponsored by [Matterhorn Studio](https://matterhorn.studio/) will be anno
 {% else %}
 We'd like to congratulate the following teams for their outstanding contributions to the hackathon! The top-ranked[<sup>(?)</sup>][faq]{:title="What is expected from me if I act as a judge?"} projects are as follows:
 
-| Rank | # | Team Name | Project Name |
+| Rank | Project # | Team Name | Project Name |
 | --- | --- | --- | --- |
 1st | Project 23 | Noisy Nerds | Reliable Surrogate Models of Noisy Data |
 2nd | Project 34 | BOMS Prob | Streamlining Material Discovery - Bayesian Optimization in Thermal Fluid Mixtures |
