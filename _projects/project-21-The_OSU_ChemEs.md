@@ -14,7 +14,7 @@ contributors:
 
 
 github: AC-BO-Hackathon/project-The_OSU_ChemEs
-youtube_video: https://www.youtube.com/watch?v=uYXAe3sRUSo
+youtube_video: uYXAe3sRUSo
 
 ---
 
