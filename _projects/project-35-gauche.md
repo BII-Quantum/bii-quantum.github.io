@@ -3,10 +3,10 @@ number: 35 # leave as-is, maintainers will adjust
 title: Tutorial for GAUCHE - A Library for Gaussian Processes in Chemistry
 topic: tutorial
 team_leads:
-  - Ryan-Rhys Griffiths (Ryan-Rhys, University of Cambridge)
-  - Sang Truong (sangttruong, Stanford University)
-  - Mathieu Alain (mathieualain, University College London)
-  - Anthony Onwuli (AntObi, Imperial College London)
+  - Ryan-Rhys Griffiths (University of Cambridge) @Ryan-Rhys
+  - Sang Truong (Stanford University) @sangttruong
+  - Mathieu Alain (University College London) @mathieualain
+  - Anthony Onwuli (Imperial College London) @AntObi
 
 # Comment these lines by prepending the pound symbol (#) to each line to hide these elements
 # contributors:
