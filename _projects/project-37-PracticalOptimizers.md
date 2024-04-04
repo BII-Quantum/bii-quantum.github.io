@@ -3,7 +3,7 @@ number: 37 # leave as-is, maintainers will adjust
 title: The Effects of Post-Modelling Performance Metric Computation on the Efficiency of Bayesian Optimizers
 topic: general
 team_leads:
-  - Thomas Andrews (The University of Melbourne, CSIRO)
+  - Thomas Andrews (The University of Melbourne, CSIRO) @TSAndrews
 
 # Comment these lines by prepending the pound symbol (#) to each line to hide these elements
 # contributors:
