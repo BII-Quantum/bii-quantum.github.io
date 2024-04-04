@@ -10,10 +10,7 @@ team_leads:
   - Sean Park (University of Toronto) @seanhspark
   - Yeonghun Kang (University of Toronto) @yeonghun1675
 
-contributors:
-Stefan P. Schmid, Ella Rajaonson, Sean Park, Mohammad Haddadnia, Yeonghun Kang, Felix Strieth-Kalthoff
-
-github: https://github.com/felix-s-k/general-optimizers.git
+github: felix-s-k/general-optimizers
 youtube_video: wfSyIudptfc
 
 ---
