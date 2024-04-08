@@ -82,6 +82,8 @@ enforcing a spacing criterion during experimental selection in early iterations.
 This research only serves as a precursory study of the effects of post modelling metric computation. There was insufficient 
 exploration of benchmarks or algorithm parameters to have a strong confidence in the findings. Further research is still required.
 
+Check out our social media post on [LinkedIn](https://www.linkedin.com/posts/thomas-andrews-177473143_can-the-performance-of-bayesian-optimizers-activity-7183059284807593984-BHdh?utm_source=share&utm_medium=member_desktop)!
+
 ## References:
 1. Felton, K. C., Rittig, J. G., & Lapkin, A. A. (2021), [Summit: benchmarking machine learning methods for reaction optimisation](https://doi.org/10.1002/cmtd.202000051). _Chemistry‐Methods_, _1_(2), 116-122.
 2. Hone, C. A., Holmes, N., Akien, G. R., Bourne, R. A., & Muller, F. L. (2017). [Rapid multistep kinetic model generation from transient flow data](https://doi.org/10.1039/C6RE00109B). _Reaction chemistry & engineering_, _2_(2), 103-108.
