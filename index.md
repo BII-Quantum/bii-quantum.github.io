@@ -95,7 +95,7 @@ Prizes sponsored by [Matterhorn Studio](https://matterhorn.studio/) will be anno
 | First-ranked | Up to CA$300 gift card per team member (max CA$1000) |
 | Second-ranked | Up to CA$150 gift card per team member (max CA$500) |
 | Third-ranked | Up to CA$75 gift card per team member (max CA$250) |
-| 4th-10th ranked | Up to CA$30 gift card per team member (max CA$100) |
+| 4th-10th ranked | Up to CA$35 gift card per team member (max CA$125) |
 
 {% else %}
 We'd like to congratulate the following teams for their outstanding contributions to the hackathon! The top-ranked[<sup>(?)</sup>][faq]{:title="What is expected from me if I act as a judge?"} projects from the showcase and judging session are as follows:
