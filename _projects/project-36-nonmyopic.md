@@ -4,13 +4,12 @@ title: Scalable Nonmyopic Bayesian Optimization in Dynamic Cost Settings
 topic: general
 team_leads:
   - Sang T. Truong (Stanford)
+  - Duc Q. Nguyen (HCMC University of Technology - VNU-HCM)
 
 # Comment these lines by prepending the pound symbol (#) to each line to hide these elements
 contributors:
-#  - Contributor 1 (Institution 1)
-#  - Contributor 2 (Institution 2)
 
-# github: AC-BO-Hackathon/<your-repo-name>
+github: sangttruong/nonmyopia
 # youtube_video: <your-video-id>
 
 ---
