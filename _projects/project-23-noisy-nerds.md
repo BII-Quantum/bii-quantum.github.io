@@ -13,7 +13,7 @@ contributors:
   - Utkarsh Pratiush (University of Tennessee)
   - Joseph Manning (University of Manchester, UK) @jrhmanning
 
-# github: AC-BO-Hackathon/<your-repo-name>
+github: AC-BO-Hackathon/project-noisy-nerds
 # youtube_video: <your-video-id>
 
 ---
