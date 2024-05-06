@@ -15,7 +15,7 @@ contributors:
 
 
 github: AC-BO-Hackathon/BOPE-GPT
-youtube_video: https://youtu.be/AbRDOdmafB8
+youtube_video: AbRDOdmafB8
 
 ---
 
