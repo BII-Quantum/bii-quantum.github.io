@@ -10,11 +10,8 @@ team_leads:
   - Sean Park (University of Toronto) @seanhspark
   - Yeonghun Kang (University of Toronto) @yeonghun1675
 
-# contributors:
-#  - 
-
-github: AC-BO-Hackathon/general-optimizers
-# youtube_video: <your-video-id>
+github: felix-s-k/general-optimizers
+youtube_video: wfSyIudptfc
 
 ---
 

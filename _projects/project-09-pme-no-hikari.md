@@ -1,6 +1,6 @@
 ---
 number: 9
-title: Optimizing The CO2 Uptake of Metal-Organic Framework Using Thompson Sampling
+title: Optimizing The CO2 Uptake of Metal-Organic Frameworks Using Thompson Sampling
 topic: general
 team_leads:
   - Ray Zhu (University of Chicago) @Ray16
@@ -17,6 +17,8 @@ youtube_video: l0aVZDMwIMU
 ---
 
 Metal-organic frameworks are nanoporous materials that shows great promise for carbon capture at large scale. In this work, we adopt the CRAFTED MOF dataset and build Bayesian optimization model with Thompson sampling acquisition function to perform candidate selection for MOfs with high CO2 uptake. We benchmark Thompson sampling against random sampling method to compare their performance in finding high-performers.
+
+Check out our [submission post on LinkedIn](https://www.linkedin.com/posts/zhu-ruijie_bohackathon-activity-7179561981610262528-mY-_)!
 
 References:
 
