@@ -10,8 +10,8 @@ team_leads:
 #  - Contributor 1 (Institution 1)
 #  - Contributor 2 (Institution 2)
 
-# github: TSAndrews/EmbeddedKnowledgeBO
-# youtube_video: kwXHoWV8g1E
+github: TSAndrews/EmbeddedKnowledgeBO
+youtube_video: kwXHoWV8g1E
 
 ---
 
