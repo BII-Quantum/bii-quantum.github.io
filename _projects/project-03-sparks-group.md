@@ -8,7 +8,7 @@ team_leads:
 contributors:
   - Carter Salbego (University of Utah) @Knavecrix
   - Ramsey Issa (University of Utah) @ramseyissa
-  - Dr. Taylor Sparks (University of Utah) @sp8rks
+  - Taylor Sparks (University of Utah) @sp8rks
   
 github: AndrewFalkowski/TakeYourTime
 youtube_video: WkGfShRSYW4
