@@ -11,7 +11,7 @@ contributors:
   - Connor Rupnow (University of British Columbia (former)) @connorrupnow
 
 github: jakobzeitler/interpretable-BO
-# youtube_video: <your-video-id>
+youtube_video: Cyyj9ySybZE
 
 ---
 
