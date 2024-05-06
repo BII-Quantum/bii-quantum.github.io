@@ -1,6 +1,7 @@
 ---
 number: 1 # leave as-is, maintainers will adjust
 title: Multi-objective Benchmarking of Dragonfly against BoTorch
+topic: general
 team_leads:
   - Jakob Zeitler (<a href=http://matterhorn.studio/>Matterhorn Studio</a>)
 
@@ -11,6 +12,7 @@ contributors:
   - Zhenzhu Li (Imperial College London) @lizhenzhupearl
 
 github: A-Ijishakin/Multi-Objective-BO
+youtube: https://youtu.be/TW18stK8z9Y
 
 ---
 

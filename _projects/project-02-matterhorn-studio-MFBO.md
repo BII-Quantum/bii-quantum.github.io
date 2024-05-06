@@ -9,9 +9,9 @@ contributors:
   - Gbetondji Dovonon (<a href="http://matterhorn.studio">Matterhorn Studio</a>) @jean72human
   - Mohammed Azzouzi (Imperial College London)
 
-# github: AC-BO-Hackathon/<your-repo-name>
+github: jean72human/LRBMFO
 
-# youtube_video: CzZ-_A2_dck
+youtube_video: =pegJumJEOsE
 ---
 
 Based on our [recent workshop paper](https://arxiv.org/abs/2312.12633), we will investigate the causes of long-run MFBO failure.

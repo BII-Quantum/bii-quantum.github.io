@@ -11,6 +11,8 @@ contributors:
 
 github: jakobzeitler/sustainable-concrete
 
+youtube_video: jSPGCgH31Hc
+
 ---
 
 We will provide a tutorial on how to use Robust GPs ([https://arxiv.org/abs/2311.00463](https://arxiv.org/abs/2311.00463)) for the Sustainable Concrete via Bayesian Optimization.
