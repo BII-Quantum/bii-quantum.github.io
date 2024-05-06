@@ -9,7 +9,7 @@ contributors:
   - Gbetondji Dovonon (<a href="http://matterhorn.studio">Matterhorn Studio</a>) @jean72human
   - Mohammed Azzouzi (Imperial College London)
 
-# github: AC-BO-Hackathon/<your-repo-name>
+github: jean72human/LRBMFO
 
 youtube_video: =pegJumJEOsE
 ---
