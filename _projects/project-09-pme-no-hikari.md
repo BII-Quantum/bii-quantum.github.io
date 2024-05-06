@@ -1,19 +1,18 @@
 ---
 number: 9
-title: Optimizing The CO2 Uptakes of Metal-Organic Frameworks Using Thompson Sampling
+title: Optimizing The CO2 Uptake of Metal-Organic Frameworks Using Thompson Sampling
 topic: general
 team_leads:
-  - Ray Zhu (University of Chicago)
+  - Ray Zhu (University of Chicago) @Ray16
 
 contributors:
-  - Oliver Tang (University of Chicago)
-  - Suraj Sudhakar (University of Chicago)
-  - Jaehee Park (University of Chicago)
-  - Rija Ansari (National Research Council)
+  - Oliver Tang (University of Chicago) @oytang
+  - Suraj Sudhakar (University of Chicago) @surajsudhakar99
+  - Jaehee Park (University of Chicago) @wogml1997
+  - Rija Ansari (National Research Council) @rija-ansari
 
 github: AC-BO-Hackathon/real-world-pme-no-hikari
 youtube_video: l0aVZDMwIMU
-
 
 ---
 
