@@ -12,7 +12,7 @@ contributors:
   - Rija Ansari (National Research Council) @rija-ansari
 
 github: AC-BO-Hackathon/real-world-pme-no-hikari
-youtube_video: https://www.youtube.com/watch?v=l0aVZDMwIMU
+youtube_video: l0aVZDMwIMU
 
 ---
 
