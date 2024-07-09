@@ -110,7 +110,7 @@ We'd like to congratulate the following teams for their outstanding contribution
 6th | [Project 9](https://ac-bo-hackathon.github.io/projects/project-09-pme-no-hikari/) | PME No Hikari | Optimizing The CO2 Adsorption Capacity of Metal-Organic Frameworks Using Thompson Sampling |
 7th | [Project 11](https://ac-bo-hackathon.github.io/projects/project-11-blends/) | BlenDS | BlendDS - An intuitive specification of the design space for blends of components |
 8th | [Project 30](https://ac-bo-hackathon.github.io/projects/project-30-sero-opt/) | SERO Opt | Active learning for voltammetry waveform design |
-9th | [Project 43](https://ac-bo-hackathon.github.io/projects/project-43-general-optimizers/) | Awesome List | Bayesian Optimization Awesome List |
+9th | [Project 45](https://ac-bo-hackathon.github.io/projects/project-45-general-optimizers/) | General Optimizers | Bayesian Optimization for Generality |
 10th | [Project 3](https://ac-bo-hackathon.github.io/projects/project-03-sparks-group/) | Sparks Group | Take Your Time - Measuring Optimization Performance as a Function of ACQF Optimizer Runtime |
 
 For a full list of hackathon projects, we encourage you to check out the [projects page](_/../projects.md).
