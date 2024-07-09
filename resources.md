@@ -81,6 +81,9 @@ Programming expertise is not required, but at least beginner Python programming 
         <td><a href="https://youtube.com/playlist?list=PLL0SWcFqypCmkHClksnGlab3wglEVMqNN">Intro to Python Programming for Materials Engineers</a></td>
         <td><a href="https://wiki.python.org/moin/BeginnersGuide/Programmers">Python Beginners Guide for Programmers by Python Software Foundation</a></td>
     </tr>
+    <tr>
+        <td><a href="https://courses.packtpub.com/courses/python">The Python Workshop by Packt</a></td>
+    </tr>
 </table>
 
 If you have no prior programming experience, you may wish to start with the [Python Beginners Guide for Non-programmers by Python Software Foundation](https://www.python.org/about/gettingstarted/).
