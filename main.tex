@@ -1,7 +1,7 @@
 \PassOptionsToPackage{hyphens}{url}
-\documentclass[superscriptaddress, nofootinbib,  amsmath, amssymb, preprint]{revtex4-2}
+\documentclass[superscriptaddress, nofootinbib,  amsmath, amssymb, twocolumn]{revtex4-2}
 
-\usepackage[margin=1in]{geometry} 
+\usepackage[margin=1.5cm]{geometry} 
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[]{graphicx}
@@ -169,9 +169,9 @@
 
 \usepackage{setspace}
 
-\clubpenalty=10000
-\widowpenalty=10000
-\displaywidowpenalty=10000
+% \clubpenalty=10000
+% \widowpenalty=10000
+% \displaywidowpenalty=10000
 \usepackage{titlesec}
 
 \titlespacing{\subsection}
@@ -206,29 +206,61 @@ The outputs from this event, including developed algorithms, benchmarks, and tut
 
 \section{Introduction}
 
-Bayesian optimization (BO) has emerged as a powerful tool in optimizing complex and expensive-to-evaluate functions, often outperforming traditional search methods in a variety of scientific domains such as optimizing composition and processing parameters to maximize alloy yield strength or identifying synthesis pathways that maximize efficacy of HIV drugs. Hackathons help people to connect, gain skills, and flesh out new ideas. In the words of Michelle Duke, the "Hackathon Queen":
+Bayesian optimization (BO) has emerged as a powerful tool in optimizing complex and expensive-to-evaluate functions, often outperforming traditional search methods in a variety of scientific domains such as optimizing composition and processing parameters to maximize alloy yield strength or identifying synthesis pathways that maximize efficacy of HIV drugs (\cref{fig:intro-bo}). Hackathons help people to connect, gain skills, and flesh out new ideas. In the words of Michelle Duke, the "Hackathon Queen":
 
 \begin{quote}
 A hackathon is a short competition where people work together in teams to solve problems and challenges by coming up with solutions and ideas.
 \end{quote}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{latex/figures/intro-bo.png}
+    \caption{Optimization traces for various algorithms. Bayesian optimization (BO) typically outperforms traditional design of experiment (DoE) methods. It uses a smart model, often based on Gaussian Processes, to predict where to look next in an experiment to find the best results with minimal trials. This method is especially handy when dealing with experiments that don’t have straightforward outcomes or involve a lot of variables, which is often the case in these fields.}
+    \label{fig:intro-bo}
+\end{figure}
+
 
 The goal of the AC BO Hackathon was to leverage the expertise of a diverse, global community to advance the development and application of BO techniques for solving critical challenges in the physical sciences. The hackathon also aimed to foster collaboration and knowledge sharing among participants from different backgrounds, including academia, national laboratories, government agencies, and private industry. The event attracted 120 active participants from 44 teams, representing 41 academic institutions, 12 national labs, and 9 companies. Likewise, the participants were located in 38 cities, 14 countries, and 4 continents (\cref{fig:map}).
 
 \begin{figure}[h!]
     \centering
     % \captionsetup{justification=centering}
-    \includegraphics[width=1\textwidth]{latex/figures/world_map.png}
-    \caption{\textbf{Demographic distributions of the participating teams and their affiliations}. 
- \label{fig:map}}
+    \includegraphics[width=1\linewidth]{latex/figures/world_map.png}
+    \caption{Demographic distributions of the participating teams and their affiliations. \label{fig:map}}
 \end{figure}
+
+\begin{table*}[]
+\caption{List of projects and project types, with links to corresponding website project pages, repositories, videos, and social media posts.}
+\label{tab:projects}
+\setlength{\extrarowheight}{0.4em}
+\begin{tabularx}{\textwidth}{>{\centering\arraybackslash}p{1cm} X >{\centering\arraybackslash}X}
+\toprule
+\# & Project Name & Links \\ \midrule
+\href{https://example.com}{\#1} & Project A & 
+\href{https://github.com/example}{\faGithub} \,
+\href{https://youtube.com}{\faVideo} \,
+\href{https://twitter.com}{\faTwitter} \tabularnewline
+\href{https://example.com}{\#2} & Project B & 
+\href{https://github.com/example}{\faGithub} \,
+\href{https://youtube.com}{\faVideo} \,
+\href{https://linkedin.com}{\faLinkedin} \tabularnewline
+\href{https://example.com}{\#3} & Project C & 
+\href{https://github.com/example}{\faGithub} \,
+\href{https://youtube.com}{\faVideo} \,
+\href{https://twitter.com}{\faTwitter} \tabularnewline
+\bottomrule
+\end{tabularx}
+\end{table*}
+
 
 Participants were provided with various resources to prepare for the hackathon – this included GitHub classroom assignments with automated feedback, application- and theory-focused videos and tutorials, Python refresher materials, and a list of tools to consider using during the hackathon \cref{fig:preparation}.
 
+
 \begin{figure}
     \centering
-    \includegraphics[width=0.5\linewidth]{latex}
+    \includegraphics[width=1\linewidth]{latex/figures/preparation.png}
     \caption{Caption}
-    \label{fig:enter-label}
+    \label{fig:preparation}
 \end{figure}
 
 One of the unique aspects of this event is that it was hosted in Gather Town, a sort of union between traditional video conferencing software and retro arcade-style avatars and virtual spaces (\cref{fig:gathertown}).
@@ -280,6 +312,6 @@ One of the unique aspects of this event is that it was hosted in Gather Town, a 
 %\printglossaries
 
 % \bibliographystyle{achemso}
-% \bibliography{refs}
+\bibliography{latex/ac-bo-hackathon}
 
 \end{document}
