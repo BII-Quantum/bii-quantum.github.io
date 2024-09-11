@@ -1,0 +1,307 @@
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[superscriptaddress, nofootinbib,  amsmath, amssymb, preprint]{revtex4-2}
+
+\usepackage[margin=1in]{geometry} 
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[]{graphicx}
+\usepackage{xspace}
+\usepackage{siunitx}
+\usepackage{mhchem}
+\DeclareSIUnit\angstrom{\text {Å}}
+\usepackage{orcidlink}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{natmove}
+\usepackage{placeins}
+
+\usepackage{xparse}
+\usepackage{hyperref}
+\usepackage[a-1b]{pdfx}
+
+\newcommand{\githublink}[2]{
+  \href{https://github.com/#1/#2}{\faGithub\ \url{#1/#2}}
+}
+
+\newcommand{\twitterlink}[1]{
+  \href{#1}{\faTwitter}
+}
+
+\newcommand{\zenodolink}[1]{
+  \href{https://doi.org/#1}{\faArchive\ \url{#1}}
+}
+
+%https://twitter.com/SamCox822/status/1641484192566460416?s=20
+
+
+\newcommand{\hflogo}{%
+
+\includegraphics[height=.9em]{figures/huggingface.png}
+}
+
+\newcommand{\huggingfacelink}[2]{
+  \href{https://huggingface.co/spaces/#1/#2}{\hflogo \url{#1/#2}}
+}
+
+\newcommand{\huggingfacehublink}[2]{
+  \href{https://huggingface.co/#1/#2}{\hflogo \url{#1/#2}}
+}
+
+% Adjusted Hyperref Setup for Automatically Colored Text Links
+\hypersetup{
+  colorlinks=true,       % Enables colored links
+  breaklinks=true,
+  urlcolor=blue,         % Sets the color of URL links
+  linkcolor=blue,        % Sets the color of internal links
+  citecolor=blue,        % Sets the color of citation links
+  filecolor=blue,        % Sets the color of file links
+  allcolors=blue,        % Ensures all link types are blue by default
+  pdftitle={Title},      % PDF Title
+  pdfauthor={Author}     % PDF Author
+}
+
+
+
+% =====================================================
+% packages for creating code listings 
+\usepackage{listings, xcolor}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{tqblue}{HTML}{08293d}
+\definecolor{backcolour}{HTML}{fefdf5}
+
+\lstdefinestyle{pythonstyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize\color{tqblue},
+    breakatwhitespace=false,         
+    breaklines=true,
+    postbreak=\mbox{\textcolor{magenta}{$\hookrightarrow$}\space},                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=pythonstyle}
+\hbadness=99999 
+
+\newcolumntype{C}{>{$}c<{$}}
+
+\AtBeginDocument{%
+  \heavyrulewidth=.08em
+  \lightrulewidth=.05em
+  \cmidrulewidth=.03em
+  \belowrulesep=.65ex
+  \belowbottomsep=0pt
+  \aboverulesep=.4ex
+  \abovetopsep=0pt
+  \cmidrulesep=\doublerulesep
+  \cmidrulekern=.5em
+  \defaultaddspace=.5em
+}
+
+
+
+\usepackage[most]{tcolorbox}
+
+\tcbset {
+  base/.style={
+    arc=0mm, 
+    bottomtitle=0.5mm,
+    boxrule=0mm,
+    colbacktitle=black!10!white, 
+    coltitle=black, 
+    fonttitle=\bfseries, 
+    left=2.5mm,
+    leftrule=1mm,
+    right=8.5mm,
+    title={#1},
+    toptitle=0.75mm, 
+    width=\textwidth,
+    breakable
+  }
+}
+
+\definecolor{brandblue}{rgb}{0, 0.27843137254902, 0.466666666666667}
+\newtcolorbox{agentinteraction}[1]{
+  colframe=brandblue, 
+  base={#1}
+}
+
+
+\definecolor{brandbred}{rgb}{0.63921568627451, 0, 0}
+\newtcolorbox{agentinteraction2}[1]{
+  colframe=brandbred, 
+  base={#1}
+}
+
+
+\newtcolorbox{subbox}[1]{
+  colframe=black!30!white,
+  base={#1}
+  }
+
+\usepackage{csquotes}
+\usepackage[acronym, nonumberlist]{glossaries}
+\makeglossaries
+
+\input{latex/glossary}
+
+\usepackage{tabularx} % For flexible tables with adjustable column widths
+\usepackage{booktabs} % For better table lines (\toprule, \midrule, \bottomrule)
+\usepackage{cleveref}
+
+\let\originalcite\cite
+\renewcommand{\cite}[1]{\unskip~\originalcite{#1}}
+
+\usepackage{setspace}
+
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\usepackage{titlesec}
+
+\titlespacing{\subsection}
+    {0pt}{9pt}{6pt}
+
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{nicefrac}
+\usepackage[caption=false]{subfig}
+
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\begin{document}
+
+\title{Bayesian Optimization Hackathon for Chemistry and Materials}
+
+% \input{latex/authors}
+
+
+
+
+\begin{abstract}
+The Acceleration Consortium and Merck KGaA hosted a 2-day virtual hackathon on March 27-28, 2024, bringing together scientists to explore, collaborate, and innovate in the field of Bayesian optimization for the physical sciences. Participants were encouraged to select or develop Bayesian optimization algorithms, apply them to benchmarking tasks, design new benchmarks, create instructional tutorials, and describe real-world applications. With over 100 participants across 60 academic, industry, and government organizations located in 38 cities, 14 countries, and 4 continents, this was a truly global event. % https://chatgpt.com/share/f6cd733f-1126-4151-86c5-d4b59d158dc3
+The outputs from this event, including developed algorithms, benchmarks, and tutorials, will serve as valuable resources for the research community, in addition to the new skills learned and connections formed. Released projects and general information are available at \url{https://ac-bo-hackathon.github.io/} and other locations linked from individual project pages. This event demonstrated the potential of community-driven research efforts to accelerate advances in Bayesian optimization in chemistry and materials science.
+\end{abstract}
+
+\maketitle
+
+
+% ToDo: 
+% emphasize tooling/constrained prompting/guidance 
+
+\section{Introduction}
+
+Bayesian optimization (BO) has emerged as a powerful tool in optimizing complex and expensive-to-evaluate functions, often outperforming traditional search methods in a variety of scientific domains such as optimizing composition and processing parameters to maximize alloy yield strength or identifying synthesis pathways that maximize efficacy of HIV drugs. The goal of the AC BO Hackathon was to leverage the expertise of a diverse, global community to advance the development and application of BO techniques for solving critical challenges in the physical sciences. In the words of Michelle Duke, the "Hackathon Queen":
+
+\begin{quote}
+A hackathon is a short competition where people work together in teams to solve problems and challenges by coming up with solutions and ideas.
+\end{quote}
+
+The hackathon also aimed to foster collaboration and knowledge sharing among participants from different backgrounds, including academia, national laboratories, government agencies, and private industry. The event attracted 120 active participants from 44 teams, representing 41 academic institutions, 12 national labs, and 9 companies. Likewise, the participants were located in 38 cities, 14 countries, and 4 continents. These teams engaged in a fast-paced, innovative environment to explore the frontiers of Bayesian optimization.
+
+\subsection{Event Highlights}
+
+The hackathon featured a series of collaborative tasks that encouraged participants to choose one or multiple of the following special topics:
+\begin{itemize}
+    \item \textbf{Select or develop BO algorithms} for specific scientific problems.
+    \item \textbf{Apply BO algorithms} to newly designed benchmarking tasks.
+    \item \textbf{Create instructional tutorials} to lower the barrier to entry for new users.
+    \item \textbf{Describe real-world applications} where BO has the potential to make significant impacts.
+\end{itemize}
+
+Additionally, participants were welcome to submit projects in a "general" category.
+
+Through these activities, participants not only honed their technical skills but also contributed to a collective effort to expand the toolkit available to researchers in the physical sciences. As a result, new connections were formed, new skills were acquired, and innovative ideas were inspired.
+
+\subsection{Focus Areas and Outcomes}
+
+The focus of the hackathon spanned a range of topics, including:
+- **Tooling and constrained prompting:** Development of intuitive interfaces and guidance mechanisms for applying BO in practical settings.
+- **Benchmark design:** Creation of new benchmarking datasets to evaluate and compare different BO algorithms.
+- **Algorithm development:** Refinement and innovation of BO methodologies tailored to the unique challenges of materials science and chemistry.
+- **Educational resources:** Generation of tutorials and case studies to support learning and adoption of BO techniques.
+
+These outputs are available online and will continue to support the research community in pushing the boundaries of what is possible with Bayesian optimization.
+
+
+We use Bayesian optimization (BO) because it often outperforms other search methods
+
+Task: Find the set of values for x1 to x6 that minimizes a target property
+
+Task: Find the composition/processing parameters that maximize alloy yield strength
+Task: Find the synthesis pathway maximizes binding affinity to HIV protease
+
+
+A hackathon is a short competition where people work together in teams to solve problems and challenges by coming up with solutions and ideas.
+
+AC BO Hackathon: At-a-glance
+
+https://ac-bo-hackathon.github.io/
+44 Teams/projects
+120 Active participants
+41 Academic institutions
+12 Nat’l labs/gov’t, etc.
+9 Companies
+
+Hosts: Acceleration Consortium, Merck KGaA
+
+Preparation for the hackathon - 111 GitHub Classroom assignments accepted
+
+\begin{figure}[h!]
+    \centering
+    % \captionsetup{justification=centering}
+    \includegraphics[width=1\textwidth]{latex/figures/world_map.png}
+    \caption{\textbf{Demographic distributions of the participating teams and their affiliations}. 
+ \label{fig:map}}
+\end{figure}
+
+
+
+\begin{table*}[]
+\caption{List of projects and project types, with links to corresponding website project pages, repositories, videos, and social media posts.}
+\label{tab:projects}
+\setlength{\extrarowheight}{0.4em}
+\begin{tabularx}{\textwidth}{>{\centering\arraybackslash}p{1cm} X >{\centering\arraybackslash}X}
+\toprule
+\# & Project Name & Links \\ \midrule
+\href{https://example.com}{\#1} & Project A & 
+\href{https://github.com/example}{\faGithub} \,
+\href{https://youtube.com}{\faVideo} \,
+\href{https://twitter.com}{\faTwitter} \tabularnewline
+\href{https://example.com}{\#2} & Project B & 
+\href{https://github.com/example}{\faGithub} \,
+\href{https://youtube.com}{\faVideo} \,
+\href{https://linkedin.com}{\faLinkedin} \tabularnewline
+\href{https://example.com}{\#3} & Project C & 
+\href{https://github.com/example}{\faGithub} \,
+\href{https://youtube.com}{\faVideo} \,
+\href{https://twitter.com}{\faTwitter} \tabularnewline
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+
+
+
+
+
+
+\section*{Acknowledgements}
+
+%\printglossaries
+
+% \bibliographystyle{achemso}
+% \bibliography{refs}
+
+\end{document}
