@@ -11,7 +11,7 @@ team_leads:
     
 #contributors:
 
-github: https://github.com/shijiale0609/BO-EMD-Materials
+github: shijiale0609/BO-EMD-Materials
 youtube_video: I179UR8P054
 
 ---
