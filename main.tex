@@ -60,6 +60,10 @@
   pdfauthor={Author}     % PDF Author
 }
 
+\usepackage[nameinlink,capitalise]{cleveref} %needs to appear after hyperref, https://tex.stackexchange.com/questions/396728/my-equations-referencing-not-working
+\Crefname{figure}{Figure}{Figures} %needs to appear after hyperref and cleveref
+\crefname{appsec}{Appendix}{Appendices}
+\newcommand\crefrangeconjunction{--} % modify the reference style
 
 
 % =====================================================
@@ -150,7 +154,7 @@
   base={#1}
   }
 
-\usepackage{csquotes}
+\usepackage [autostyle, english = american]{csquotes}
 \usepackage[acronym, nonumberlist]{glossaries}
 \makeglossaries
 
@@ -190,7 +194,7 @@
 
 
 \begin{abstract}
-The Acceleration Consortium and Merck KGaA hosted a 2-day virtual hackathon on March 27-28, 2024, bringing together scientists to explore, collaborate, and innovate in the field of Bayesian optimization for the physical sciences. Participants were encouraged to select or develop Bayesian optimization algorithms, apply them to benchmarking tasks, design new benchmarks, create instructional tutorials, and describe real-world applications. With over 100 participants across 60 academic, industry, and government organizations located in 38 cities, 14 countries, and 4 continents, this was a truly global event. % https://chatgpt.com/share/f6cd733f-1126-4151-86c5-d4b59d158dc3
+The Acceleration Consortium and Merck KGaA hosted a 2-day virtual hackathon on March 27-28, 2024, bringing together scientists to explore, collaborate, and innovate in the field of Bayesian optimization for the physical sciences. Participants were encouraged to select or develop Bayesian optimization algorithms, apply them to benchmarking tasks, design new benchmarks, create instructional tutorials, and describe real-world applications. With over 100 participants across 60 academic, industry, and government organizations located in 38 cities, 14 countries, and 4 continents, this was a global event. % https://chatgpt.com/share/f6cd733f-1126-4151-86c5-d4b59d158dc3
 The outputs from this event, including developed algorithms, benchmarks, and tutorials, will serve as valuable resources for the research community, in addition to the new skills learned and connections formed. Released projects and general information are available at \url{https://ac-bo-hackathon.github.io/} and other locations linked from individual project pages. This event demonstrated the potential of community-driven research efforts to accelerate advances in Bayesian optimization in chemistry and materials science.
 \end{abstract}
 
@@ -202,61 +206,13 @@ The outputs from this event, including developed algorithms, benchmarks, and tut
 
 \section{Introduction}
 
-Bayesian optimization (BO) has emerged as a powerful tool in optimizing complex and expensive-to-evaluate functions, often outperforming traditional search methods in a variety of scientific domains such as optimizing composition and processing parameters to maximize alloy yield strength or identifying synthesis pathways that maximize efficacy of HIV drugs. The goal of the AC BO Hackathon was to leverage the expertise of a diverse, global community to advance the development and application of BO techniques for solving critical challenges in the physical sciences. In the words of Michelle Duke, the "Hackathon Queen":
+Bayesian optimization (BO) has emerged as a powerful tool in optimizing complex and expensive-to-evaluate functions, often outperforming traditional search methods in a variety of scientific domains such as optimizing composition and processing parameters to maximize alloy yield strength or identifying synthesis pathways that maximize efficacy of HIV drugs. Hackathons help people to connect, gain skills, and flesh out new ideas. In the words of Michelle Duke, the "Hackathon Queen":
 
 \begin{quote}
 A hackathon is a short competition where people work together in teams to solve problems and challenges by coming up with solutions and ideas.
 \end{quote}
 
-The hackathon also aimed to foster collaboration and knowledge sharing among participants from different backgrounds, including academia, national laboratories, government agencies, and private industry. The event attracted 120 active participants from 44 teams, representing 41 academic institutions, 12 national labs, and 9 companies. Likewise, the participants were located in 38 cities, 14 countries, and 4 continents. These teams engaged in a fast-paced, innovative environment to explore the frontiers of Bayesian optimization.
-
-\subsection{Event Highlights}
-
-The hackathon featured a series of collaborative tasks that encouraged participants to choose one or multiple of the following special topics:
-\begin{itemize}
-    \item \textbf{Select or develop BO algorithms} for specific scientific problems.
-    \item \textbf{Apply BO algorithms} to newly designed benchmarking tasks.
-    \item \textbf{Create instructional tutorials} to lower the barrier to entry for new users.
-    \item \textbf{Describe real-world applications} where BO has the potential to make significant impacts.
-\end{itemize}
-
-Additionally, participants were welcome to submit projects in a "general" category.
-
-Through these activities, participants not only honed their technical skills but also contributed to a collective effort to expand the toolkit available to researchers in the physical sciences. As a result, new connections were formed, new skills were acquired, and innovative ideas were inspired.
-
-\subsection{Focus Areas and Outcomes}
-
-The focus of the hackathon spanned a range of topics, including:
-- **Tooling and constrained prompting:** Development of intuitive interfaces and guidance mechanisms for applying BO in practical settings.
-- **Benchmark design:** Creation of new benchmarking datasets to evaluate and compare different BO algorithms.
-- **Algorithm development:** Refinement and innovation of BO methodologies tailored to the unique challenges of materials science and chemistry.
-- **Educational resources:** Generation of tutorials and case studies to support learning and adoption of BO techniques.
-
-These outputs are available online and will continue to support the research community in pushing the boundaries of what is possible with Bayesian optimization.
-
-
-We use Bayesian optimization (BO) because it often outperforms other search methods
-
-Task: Find the set of values for x1 to x6 that minimizes a target property
-
-Task: Find the composition/processing parameters that maximize alloy yield strength
-Task: Find the synthesis pathway maximizes binding affinity to HIV protease
-
-
-A hackathon is a short competition where people work together in teams to solve problems and challenges by coming up with solutions and ideas.
-
-AC BO Hackathon: At-a-glance
-
-https://ac-bo-hackathon.github.io/
-44 Teams/projects
-120 Active participants
-41 Academic institutions
-12 Nat’l labs/gov’t, etc.
-9 Companies
-
-Hosts: Acceleration Consortium, Merck KGaA
-
-Preparation for the hackathon - 111 GitHub Classroom assignments accepted
+The goal of the AC BO Hackathon was to leverage the expertise of a diverse, global community to advance the development and application of BO techniques for solving critical challenges in the physical sciences. The hackathon also aimed to foster collaboration and knowledge sharing among participants from different backgrounds, including academia, national laboratories, government agencies, and private industry. The event attracted 120 active participants from 44 teams, representing 41 academic institutions, 12 national labs, and 9 companies. Likewise, the participants were located in 38 cities, 14 countries, and 4 continents (\cref{fig:map}).
 
 \begin{figure}[h!]
     \centering
@@ -266,30 +222,52 @@ Preparation for the hackathon - 111 GitHub Classroom assignments accepted
  \label{fig:map}}
 \end{figure}
 
+Participants were provided with various resources to prepare for the hackathon – this included GitHub classroom assignments with automated feedback, application- and theory-focused videos and tutorials, Python refresher materials, and a list of tools to consider using during the hackathon \cref{fig:preparation}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{latex}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+
+One of the unique aspects of this event is that it was hosted in Gather Town, a sort of union between traditional video conferencing software and retro arcade-style avatars and virtual spaces (\cref{fig:gathertown}).
+
+% Preparation for the hackathon - 111 GitHub Classroom assignments accepted
+
+% The hackathon was designed with tips, trick, and resources from various sources, such as https://github.com/github/hackathons.
+
+
+% Hosts: Acceleration Consortium, Merck KGaA
+
 
 
 \begin{table*}[]
-\caption{List of projects and project types, with links to corresponding website project pages, repositories, videos, and social media posts.}
-\label{tab:projects}
+\caption{Project Topics for the Hackathon. See \href{https://ac-bo-hackathon.github.io/submission/}{the submission page} for more details.}
+\label{tab:project_topics}
 \setlength{\extrarowheight}{0.4em}
-\begin{tabularx}{\textwidth}{>{\centering\arraybackslash}p{1cm} X >{\centering\arraybackslash}X}
+\begin{tabularx}{\textwidth}{>{\centering\arraybackslash}p{0.5cm} p{4.5cm} X}
 \toprule
-\# & Project Name & Links \\ \midrule
-\href{https://example.com}{\#1} & Project A & 
-\href{https://github.com/example}{\faGithub} \,
-\href{https://youtube.com}{\faVideo} \,
-\href{https://twitter.com}{\faTwitter} \tabularnewline
-\href{https://example.com}{\#2} & Project B & 
-\href{https://github.com/example}{\faGithub} \,
-\href{https://youtube.com}{\faVideo} \,
-\href{https://linkedin.com}{\faLinkedin} \tabularnewline
-\href{https://example.com}{\#3} & Project C & 
-\href{https://github.com/example}{\faGithub} \,
-\href{https://youtube.com}{\faVideo} \,
-\href{https://twitter.com}{\faTwitter} \tabularnewline
+ & \textbf{Topic} & \textbf{Description} \\ \midrule
+
+1 & \textbf{Apply Algorithms} & Choose a package or algorithm and apply it to one of \href{https://huggingface.co/collections/AccelerationConsortium/optimization-benchmarks-66a44daf10de1a0335f28826}{the benchmark tasks prepackaged for the hackathon}. \\
+
+2 & \textbf{Develop Benchmarks} & Develop a new benchmark and add it to the suite of benchmarks from above. \\
+
+3 & \textbf{Create Tutorials} & Create "gentle introduction" tutorials for \href{https://ac-microcourses.readthedocs.io/en/latest/courses/data-science/overview.html}{advanced optimization topics}. \\
+
+4 & \textbf{Propose Tasks} & Propose materials tasks that \textit{can} and \textit{should} be tackled with BO \\
+
+5 & \textbf{General} & Other projects that are related to Bayesian optimization for the physical sciences \\
+
 \bottomrule
 \end{tabularx}
 \end{table*}
+
+
+
+
+
 
 
 
