@@ -11,7 +11,7 @@ team_leads:
     
 #contributors:
 
-github: AC-BO-Hackathon/project-chemical-similarity-EMD-kernel-BO
+github: shijiale0609/BO-EMD-Materials
 youtube_video: I179UR8P054
 
 ---
