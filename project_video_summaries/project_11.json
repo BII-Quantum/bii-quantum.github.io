@@ -1,0 +1,7 @@
+{
+    "project_number": 11,
+    "project_name": "BlendDS - An intuitive specification of the design space for blends of components",
+    "video_url": "https://www.youtube.com/watch?v=HASa3tFLZoI",
+    "summary": "This project focuses on developing an interface for Bayesian optimization that bridges the gap between domain experts (like chemists and materials scientists) and machine learning algorithms. The system allows scientists to specify experimental parameters and constraints in natural language, which is then translated into a structured dictionary format by a large language model. This dictionary is subsequently converted into a Python object that can be used for design of experiments and optimization tasks.The key feature of this interface is its ability to generate diverse trial designs for efficient sampling of the experimental space. It incorporates dimensionality reduction techniques to visualize the design space, enabling users to select the most diverse and informative trials. This approach aims to maximize the information gained from each experiment, potentially reducing the number of trials needed to reach optimal results. The project is open-source, inviting contributions and integration with existing Bayesian optimization frameworks. While specific limitations are not explicitly stated in the given context, the effectiveness of the natural language processing component and the accuracy of the translation to structured data formats would be critical factors in the system's overall performance.",
+    "status": "success"
+}
