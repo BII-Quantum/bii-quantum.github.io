@@ -1,0 +1,7 @@
+{
+    "project_number": 12,
+    "project_name": "Robust GPs for Sustainable Concrete via Bayesian Optimization",
+    "video_url": "https://www.youtube.com/watch?v=jSPGCgH31Hc",
+    "summary": "This project introduces Robust Gaussian Processes (Robust GPs) to the field of concrete science for Bayesian optimization campaigns. The research addresses the common issue of outliers in concrete science experiments by applying Robust GPs to account for these anomalies. The project provides a tutorial and accompanying code in a GitHub repository, demonstrating how to implement Robust GPs in this specific context.The study utilizes a dataset provided by Meta, which includes input variables and a target variable representing concrete strength. Initial data analysis reveals potential outliers in the strength variable, with values between 2 and 2,000. The researchers then apply Robust GP to this dataset, achieving good predictive performance. The project culminates in demonstrating how to obtain Bayesian recommendations using the Robust GP as a surrogate model, providing a practical approach for optimizing concrete mixtures while accounting for experimental outliers.",
+    "status": "success"
+}
