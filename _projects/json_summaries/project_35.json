@@ -1,0 +1,7 @@
+{
+    "project_number": 35,
+    "project_name": "Tutorial for GAUCHE - A Library for Gaussian Processes in Chemistry",
+    "video_url": "https://x.com/Ryan__Rhys/status/1820723528469262419",
+    "summary": "This research project focuses on implementing input warping for Bayesian Optimization within the Gauche library, which was previously developed by the team and published at NeurIPS 2023. The primary innovation of Gauche is the introduction of Gaussian process (GP) kernels that enable modeling of discrete entities such as SMILES strings, graphs, and bit vectors, which are common representations in molecular sciences.The motivation behind using Gaussian processes for Bayesian Optimization is their suitability for automated tasks where fine-tuning for each problem is not feasible. GPs offer a good balance between performance and simplicity, with few trainable hyperparameters that can reliably converge on each iteration of the Bayesian Optimization loop. This makes them particularly attractive as surrogate models compared to more complex alternatives like deep neural networks, which might require careful monitoring during training at each iteration. The Gauche library extends the applicability of GPs to discrete input spaces, allowing for Bayesian Optimization over molecular representations. The project team has developed a range of tutorials and applications, including molecular property prediction, protein fitness prediction, and sparse GP regression, all available in the Gauche GitHub repository.",
+    "status": "success"
+}
