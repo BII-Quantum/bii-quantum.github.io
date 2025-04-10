@@ -1,0 +1,7 @@
+{
+    "project_number": 5,
+    "project_name": "Comparing Bayesian Optimization Methods Across Multiple Hyperparameters Against Simulated \"Human\" Decision-making",
+    "video_url": "https://www.youtube.com/watch?v=znXZhSqFtHg",
+    "summary": "This research project investigated the effectiveness of BO methods that mimic human experimentalist approaches in materials science\\cite{muckley2023interpretable}, comparing them to traditional BO techniques and random search baselines\\cite{snoek2012practical,bergstra2012random}. The study focused on three key axes: model complexity, number of features, and acquisition function. The researchers found that a simplified \"human experimentalist\" approach, using automated feature engineering with a linear model, three features, and an exploitative acquisition function, was competitive with more complex random forest models in terms of enhancement factor and acceleration factor. Both the simplified approach and random forest models outperformed random search. Interestingly, for linear models, increasing complexity through additional features or more exploratory acquisition functions led to decreased performance. The main conclusion was that low-dimensional, interpretable models were comparable to traditional BO methods for the datasets and hyperparameter regimes studied. The researchers suggest future work could involve comparing their results to actual human performance and improving their methodology using theoretical approaches.",
+    "status": "success"
+}

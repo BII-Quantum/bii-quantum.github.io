@@ -1,7 +1,9 @@
 \PassOptionsToPackage{hyphens}{url}
-\documentclass[superscriptaddress, nofootinbib,  amsmath, amssymb, twocolumn]{revtex4-2}
+\documentclass[superscriptaddress, nofootinbib,  amsmath, amssymb, twocolumn]{revtex4-2} % twocolumn causing issues with neverending spillover into invisible area past first page
 
-\usepackage[margin=1.5cm]{geometry} 
+% \usepackage{balance}
+
+% \usepackage[margin=1.5cm]{geometry} 
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[]{graphicx}
@@ -15,9 +17,31 @@
 \usepackage{natmove}
 \usepackage{placeins}
 
+\usepackage{ifthen}        % For conditional statements
+
+
+\usepackage{longtable}
+
+
+
+% % Initialize a macro to keep track of seen project names
+% \newcommand{\projectnamesseen}{}
+
+% % Define a macro to select the appropriate social media icon
+% \newcommand{\socialmediaicon}[1]{%
+%     \IfSubStr{#1}{twitter.com}{\faTwitter}{%
+%     \IfSubStr{#1}{linkedin.com}{\faLinkedin}{%
+%     \IfSubStr{#1}{facebook.com}{\faFacebook}{%
+%     \IfSubStr{#1}{instagram.com}{\faInstagram}{\faLink}}}}%
+% }
+% \DTLloadrawdb[keys={ProjectNum,ProjectLink,ProjectName,TeamName,FirstName,LastName,Email,Organization,Industry/Academia/Gov't,City,Address,GithubRepo,SocialMediaLink,VideoLink}]{stores}{test.csv}
+
 \usepackage{xparse}
-\usepackage{hyperref}
 \usepackage[a-1b]{pdfx}
+% \usepackage[allfiguresdraft]{draftfigure}
+
+\usepackage[disable]{todonotes}
+% \usepackage{todonotes}
 
 \newcommand{\githublink}[2]{
   \href{https://github.com/#1/#2}{\faGithub\ \url{#1/#2}}
@@ -32,6 +56,12 @@
 }
 
 %https://twitter.com/SamCox822/status/1641484192566460416?s=20
+
+\newcommand{\formatlinks}[3]{%
+    \href{\ifx\empty#1\empty N/A\else#1\fi}{\faGithub}\,%
+    \href{\ifx\empty#2\empty N/A\else#2\fi}{\faVideo}\,%
+    \href{\ifx\empty#3\empty N/A\else#3\fi}{\faTwitter}  % Adjust the icon based on social media type
+}
 
 
 \newcommand{\hflogo}{%
@@ -155,7 +185,9 @@
   }
 
 \usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
 \usepackage[acronym, nonumberlist]{glossaries}
+\glsdisablehyper
 \makeglossaries
 
 \input{latex/glossary}
@@ -189,24 +221,28 @@
 \title{Bayesian Optimization Hackathon for Chemistry and Materials}
 
 % \input{latex/authors}
+\input{latex/authors-hardcoded}
 
 
 
 
 \begin{abstract}
 The Acceleration Consortium and Merck KGaA hosted a 2-day virtual hackathon on March 27-28, 2024, bringing together scientists to explore, collaborate, and innovate in the field of Bayesian optimization for the physical sciences. Participants were encouraged to select or develop Bayesian optimization algorithms, apply them to benchmarking tasks, design new benchmarks, create instructional tutorials, and describe real-world applications. With over 100 participants across 60 academic, industry, and government organizations located in 38 cities, 14 countries, and 4 continents, this was a global event. % https://chatgpt.com/share/f6cd733f-1126-4151-86c5-d4b59d158dc3
-The outputs from this event, including developed algorithms, benchmarks, and tutorials, will serve as valuable resources for the research community, in addition to the new skills learned and connections formed. Released projects and general information are available at \url{https://ac-bo-hackathon.github.io/} and other locations linked from individual project pages. This event demonstrated the potential of community-driven research efforts to accelerate advances in Bayesian optimization in chemistry and materials science.
+The outputs from this event, including developed algorithms, benchmarks, and tutorials, will serve as valuable resources for the research community, in addition to the new skills learned and connections formed. Released projects and general information are available at \url{https://ac-bo-hackathon.github.io/} and other locations linked from individual project pages. This event demonstrates the potential of community-driven research efforts to accelerate advances in Bayesian optimization in chemistry and materials science.
 \end{abstract}
 
 \maketitle
 
 
+
 % ToDo: 
 % emphasize tooling/constrained prompting/guidance 
 
+\todo[inline]{automate authors.tex based on the google sheet (maybe some info needed from credit form}
+
 \section{Introduction}
 
-Bayesian optimization (BO) has emerged as a powerful tool in optimizing complex and expensive-to-evaluate functions, often outperforming traditional search methods in a variety of scientific domains such as optimizing composition and processing parameters to maximize alloy yield strength or identifying synthesis pathways that maximize efficacy of HIV drugs (\cref{fig:intro-bo}). Hackathons help people to connect, gain skills, and flesh out new ideas. In the words of Michelle Duke, the "Hackathon Queen":
+\Gls{bo} has emerged as a powerful tool in optimizing complex and expensive-to-evaluate functions, often outperforming traditional search methods in a variety of scientific domains such as optimizing composition and processing parameters to maximize alloy yield strength or identifying synthesis pathways that maximize efficacy of HIV drugs (\cref{fig:intro-bo}). Hackathons help people to connect, gain skills, and flesh out new ideas. In the words of Michelle Duke, the "Hackathon Queen":
 
 \begin{quote}
 A hackathon is a short competition where people work together in teams to solve problems and challenges by coming up with solutions and ideas.
@@ -215,64 +251,120 @@ A hackathon is a short competition where people work together in teams to solve 
 \begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{latex/figures/intro-bo.png}
-    \caption{Optimization traces for traditional design of experiment (DoE) methods compared with Bayesian optimization (BO), typically outperforms. BO uses a smart model to predict where to look next in an experiment to find the best results with few experiments.}
+    \caption{Optimization traces for traditional design of experiment (DoE) methods compared with \gls{bo}, typically outperforms. \Gls{bo} uses a smart model to predict where to look next in an experiment to find the best results with few experiments.}
     \label{fig:intro-bo}
 \end{figure}
 
 
-The goal of the AC BO Hackathon was to leverage the expertise of a diverse, global community to advance the development and application of BO techniques for solving critical challenges in the physical sciences. The hackathon also aimed to foster collaboration and knowledge sharing among participants from different backgrounds, including academia, national laboratories, government agencies, and private industry. The event attracted 120 active participants from 44 teams, representing 41 academic institutions, 12 national labs, and 9 companies. Likewise, the participants were located in 38 cities, 14 countries, and 4 continents (\cref{fig:map}). A full list of projects, including links to the corresponding GitHub repositories, submission video, and social media post are provided in \cref{tab:projects}.
+\cite{saarLowCostRobotScience2022}
 
-\begin{figure}[h!]
+The goal of the AC BO Hackathon was to leverage the expertise of a diverse, global community to advance the development and application of \gls{bo} techniques for solving critical challenges in the physical sciences. The hackathon also aimed to foster collaboration and knowledge sharing among participants from different backgrounds, including academia, national laboratories, government agencies, and private industry. The event attracted 120 active participants from 44 teams, representing 41 academic institutions, 12 national labs, and 9 companies. Likewise, the participants were located in 38 cities, 14 countries, and 4 continents (\cref{fig:map}). A full list of projects, including links to the corresponding GitHub repositories, submission video, and social media post are provided in \cref{tab:projects}.
+
+% \onecolumngrid % (https://tex.stackexchange.com/a/214834/224861)
+% % don't remove this linebreak 
+
+
+\begin{figure*}
     \centering
     % \captionsetup{justification=centering}
-    \includegraphics[width=1\linewidth]{latex/figures/world_map.png}
-    \caption{Demographic distributions of the participating teams and their affiliations. \label{fig:map}}
-\end{figure}
+    \includegraphics[width=0.95\linewidth]{latex/figures/world_map.png}
+    \caption{Demographic distributions of the participating teams and their affiliations. The hackathon supported 129 participants across 60 academic, industry, and government organizations located in 59 cities, 19 countries, and 4 continents. \label{fig:map} }
+\end{figure*}
 
-\begin{table*}[]
-\caption{List of projects and project types, with links to corresponding website project pages, repositories, videos, and social media posts.}
-\label{tab:projects}
-\setlength{\extrarowheight}{0.4em}
-\begin{tabularx}{\textwidth}{>{\centering\arraybackslash}p{1cm} X >{\centering\arraybackslash}X}
-\toprule
-\# & Project Name & Links \\ \midrule
-\href{https://example.com}{\#1} & Project A & 
-\href{https://github.com/example}{\faGithub} \,
-\href{https://youtube.com}{\faVideo} \,
-\href{https://twitter.com}{\faTwitter} \tabularnewline
-\href{https://example.com}{\#2} & Project B & 
-\href{https://github.com/example}{\faGithub} \,
-\href{https://youtube.com}{\faVideo} \,
-\href{https://linkedin.com}{\faLinkedin} \tabularnewline
-\href{https://example.com}{\#3} & Project C & 
-\href{https://github.com/example}{\faGithub} \,
-\href{https://youtube.com}{\faVideo} \,
-\href{https://twitter.com}{\faTwitter} \tabularnewline
-\bottomrule
-\end{tabularx}
-\end{table*}
 
+
+
+% \begin{table*}[]
+% \caption{List of projects and project types, with links to corresponding website project pages, repositories, videos, and social media posts.} \label{tab:projects} \setlength{\extrarowheight}{0.4em} \begin{tabularx}{\textwidth}{>{\centering\arraybackslash}p{1cm} X >{\centering\arraybackslash}X} \toprule \# & Project Name & Links \\ \midrule \href{https://example.com}{\#1} & Project A & \href{https://github.com/example}{\faGithub} \, \href{https://youtube.com}{\faVideo} \, \href{https://twitter.com}{\faTwitter} \tabularnewline \href{https://example.com}{\#2} & Project B & \href{https://github.com/example}{\faGithub} \, \href{https://youtube.com}{\faVideo} \, \href{https://linkedin.com}{\faLinkedin} \tabularnewline \href{https://example.com}{\#3} & Project C & \href{https://github.com/example}{\faGithub} \, \href{https://youtube.com}{\faVideo} \, \href{https://twitter.com}{\faTwitter} \tabularnewline \bottomrule \end{tabularx} 
+% \end{table*} 
+
+
+
+
+\section{Hackathon Details and Setup}
 
 Participants were provided with various resources to prepare for the hackathon – this included GitHub classroom assignments with automated feedback, application- and theory-focused videos and tutorials, Python refresher materials, and a list of tools to consider using during the hackathon (\cref{fig:preparation}).
 
-\begin{figure}
+\begin{figure*}
     \centering
-    \includegraphics[width=1\linewidth]{latex/figures/preparation.png}
-    \caption{A snapshot of \href{https://ac-bo-hackathon.github.io/resources/}{resources listed on the hackathon webpage} such as hackathon orientation, intro to BO, and Python refreshers.}
+    \includegraphics[width=0.98\linewidth]{latex/figures/preparation.png}
+    \caption{A snapshot of \href{https://ac-bo-hackathon.github.io/resources/}{resources listed on the hackathon webpage} such as hackathon orientation, intro to \gls{bo}, and a Python refresher assignment. These resources prepared participants to maximize their time during the two-day synchronous portion of the hackathon and helped level the playing field for participants with varied backgrounds and skill levels.}
     \label{fig:preparation}
-\end{figure}
+\end{figure*}
 
-One of the unique aspects of this event is that it was hosted in Gather Town, a sort of union between traditional video conferencing software and retro arcade-style avatars and virtual spaces (\cref{fig:gathertown}). Participants create a custom avatar and maneuver in a two-dimensional space. The videos and audio of other participants appear and become audible when nearby, and fade out when far away, simulating an in-person experience. At the beginning of the hackathon, all participants gathered to listen to keynotes in realtime, which were broadcasted via YouTube live and embedded into the Gather Town space. The videos were then \href{https://ac-bo-hackathon.github.io/videos-slides/}{made available on the hackathon website}. After 2 months, the videos collectively had approximately 1600 views. After the keynotes, teams were assigned tables in breakout rooms, each with a whiteboard. Individual tables were assigned as "private spaces" which isolated the shared audio and video within each space. This had a number of advantages for collaboration within and across teams.
+One of the unique aspects of this event is that it was hosted in Gather Town, a sort of union between traditional video conferencing software and retro arcade-style avatars and virtual spaces (\cref{fig:gathertown}). Participants create a custom avatar and maneuver in a two-dimensional space. The videos and audio of other participants appear and become audible when nearby, and fade out when far away, simulating an in-person experience. At the beginning of the hackathon, all participants gathered to listen to keynotes in realtime, which were broadcasted via YouTube live and embedded into the Gather Town space. The videos were then \href{https://ac-bo-hackathon.github.io/videos-slides/}{made available on the hackathon website}, which collectively garnered approximately 1600 views within two months. After the keynotes, teams were assigned tables in breakout rooms, each with a whiteboard. Individual tables were assigned as "private spaces" which isolated the shared audio and video within each space. This had a number of advantages for collaboration within and across teams.
 
-\begin{figure}
+\begin{figure*}
     \centering
-    \includegraphics[width=1\linewidth]{latex/figures/gathertown.png}
-    \caption{Gather town \href{https://ac-bo-hackathon.github.io/videos-slides/}{keynote} room (left), custom avatars (top-right), and an example of a breakout room for teams (bottom-right). Keynotes were broadcasted in realtime to participants via an embedded YouTube livestream. Use of Gather Town leveled the playing field for teams who were in physically separate locations and made it easier for facilitators and other teams to have more natural "check-ins" with other projects.}
+    \includegraphics[width=0.95\linewidth]{latex/figures/gathertown.png}
+    \caption{Gather town \href{https://ac-bo-hackathon.github.io/videos-slides/}{keynote} room (left), custom avatars (top-right), and an example of a breakout room for teams (bottom-right). Keynotes were broadcasted in realtime to participants via an embedded YouTube livestream. Use of Gather Town helped level the playing field for teams who were in physically separate locations and made it easier for facilitators and other teams to have more natural "check-ins" with other projects.}
     \label{fig:gathertown}
-\end{figure}
+\end{figure*}
 
 
 The hackathon concluded with a project showcase accompanied by crowdsourced judging within a "poster room" (\cref{fig:poster}).
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=0.95\linewidth]{latex/figures/posters.png}
+    \caption{The synchronous portion of the hackathon concluded with a poster session and community judging. One participant noted that "it almost felt like a real poster session."}
+    \label{fig:poster}
+\end{figure*}
+
+Community judging occurred via \href{https://github.com/anishathalye/gavel}{Gavel}, an automated pairwise comparison judging system. Use of this system helped to improve fairness, scalability, and accuracy by having judges compare projects relative to each other rather than assigning subjective numerical scores (for example, "rate your pain on a scale from 1 to 10, where 10 is the worst possible pain you can imagine"). The approach of pairwise judging reduces bias, allows for handling large competitions efficiently, and produces high-quality rankings using statistical models with dynamic assignments to judges to maximize information gain. It has been successfully used at HackMIT and other events to streamline judging and enhance transparency and credibility.
+
+The corresponding Gavel web app was hosted on Heroku according to directions in the Gavel repository. Individualized links were distributed to judges via email using Gavel's SendGrid integration. Collectively, 35 judges cast 319 votes.
+
+
+
+% \clearpage
+
+\begin{longtable*}{>{\centering\arraybackslash}p{1.5cm} @{\hspace{0.4cm}} >{\raggedright\arraybackslash}p{11cm} @{\hspace{1.5cm}} >{\raggedright\arraybackslash}p{2.5cm}}
+\caption{List of projects with links to GitHub, Social Media, and Video} \label{tab:projects} \\
+% \toprule
+% \textbf{Proj. \#} & \textbf{Project Name} & \textbf{Links} \\
+% \midrule
+% \endfirsthead
+
+\toprule
+\textbf{Proj. \#} & \textbf{Project Name} & \textbf{Links} \\
+\midrule
+\endhead
+
+\midrule \multicolumn{3}{r}{\textit{Continued on the next page}} \\
+\midrule
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+\input{|python3 python_scripts/process_spreadsheet.py}
+
+\end{longtable*}
+
+
+
+
+\begin{table*}[]
+\caption{Ranked Projects with Team Names and Prize Distribution. To avoid incentivizing single-person teams and very large teams, both per-person and per-team limits were imposed (e.g., teams of 4 or more would have the max per-team amount divided equally rather than receive the max per-person amount).}
+\label{tab:winners}
+\setlength{\extrarowheight}{0.8em}
+\begin{tabularx}{\textwidth}{>{\centering\arraybackslash}p{1.0cm} >{\centering\arraybackslash}p{1.5cm} >{\centering\arraybackslash}p{3cm} X >{\centering\arraybackslash}p{3cm}}
+\toprule
+\textbf{Rank} & \textbf{Proj. \#} & \textbf{Team Name} & \textbf{Project Name} & \textbf{Prize* (CAD)} \\ \midrule
+1st  & \#23 & Noisy Nerds                & Reliable Surrogate Models of Noisy Data                                                   & 300 (1000 max)          \tabularnewline
+2nd  & \#34 & BOMS Prob                  & Streamlining Material Discovery - Bayesian Optimization in Thermal Fluid Mixtures          & 150 (500 max)           \tabularnewline
+3rd  & \#7  & Surface Science Syndicate  & BayBE One More Time - Exploring Corrosion Inhibitors for Materials Design                  & 75 (250 max)            \tabularnewline
+4th  & \#5  & KLM                        & Comparing Bayesian Optimization Methods \ldots Against Simulated "Human" Decision-making & 40 (125 max)            \tabularnewline
+5th  & \#8  & Molecular Representation   & BO for Drug Discovery - What is the role of molecular representation?                      & 40 (125 max)            \tabularnewline
+6th  & \#9  & PME No Hikari              & Optimizing The CO2 Adsorption Capacity of Metal-Organic Frameworks Using Thompson Sampling  & 40 (125 max)            \tabularnewline
+7th  & \#11 & BlenDS                     & BlendDS - An intuitive specification of the design space for blends of components          & 40 (125 max)            \tabularnewline
+8th  & \#30 & SERO Opt                   & Active learning for voltammetry waveform design                                            & 40 (125 max)            \tabularnewline
+9th  & \#43 & General Optimizers         & Bayesian Optimization for Generality                                                      & 40 (125 max)            \tabularnewline
+10th & \#3  & Sparks Group               & Take Your Time - Measuring Optimization Performance as a Function of ACQF Optimizer Runtime & 40 (125 max)           \tabularnewline
+\bottomrule
+\end{tabularx}
+\end{table*}
 
 
 
@@ -293,36 +385,40 @@ The hackathon concluded with a project showcase accompanied by crowdsourced judg
 \toprule
  & \textbf{Topic} & \textbf{Description} \\ \midrule
 
-1 & \textbf{Apply Algorithms} & Choose a package or algorithm and apply it to one of \href{https://huggingface.co/collections/AccelerationConsortium/optimization-benchmarks-66a44daf10de1a0335f28826}{the benchmark tasks prepackaged for the hackathon}. \\
+1 & \textbf{Apply Algorithms} & Choose an algorithm and apply it to a \href{https://huggingface.co/collections/AccelerationConsortium/optimization-benchmarks-66a44daf10de1a0335f28826}{hackathon benchmark task} \\
 
-2 & \textbf{Develop Benchmarks} & Develop a new benchmark and add it to the suite of benchmarks from above. \\
+2 & \textbf{Develop Benchmarks} & Develop a new benchmark and add it to a suite of benchmarks \\
 
-3 & \textbf{Create Tutorials} & Create "gentle introduction" tutorials for \href{https://ac-microcourses.readthedocs.io/en/latest/courses/data-science/overview.html}{advanced optimization topics}. \\
+3 & \textbf{Create Tutorials} & Create "gentle introduction" tutorials for \href{https://ac-microcourses.readthedocs.io/en/latest/courses/data-science/overview.html}{advanced optimization topics} \\
 
-4 & \textbf{Propose Tasks} & Propose materials tasks that \textit{can} and \textit{should} be tackled with BO \\
+4 & \textbf{Propose Tasks} & Propose materials tasks that \textit{can} and \textit{should} be tackled with \gls{bo} \\
 
-5 & \textbf{General} & Other projects that are related to Bayesian optimization for the physical sciences \\
+5 & \textbf{General} & Other projects related to \gls{bo} for the physical sciences \\
 
 \bottomrule
 \end{tabularx}
 \end{table*}
 
+% \clearpage
+
+\section{Projects' Key Findings}
+
+This section provides a comprehensive summary and highlights the key findings from all project submissions.
+To streamline the evaluation process, all YouTube video submissions were transcribed and analyzed using Anthropics’s \emph{claude-3-5-sonnet-20240620} with a temperature of 0.3, ensuring consistent and accurate processing.
+This automated approach enhances efficiency while maintaining a structured and objective assessment of the submissions.
 
 
+\input{|python3 python_scripts/process_summaries.py}
 
-
-
-
-
-
-
-
+\clearpage
 
 \section*{Acknowledgements}
+
+\section*{References}
 
 %\printglossaries
 
 % \bibliographystyle{achemso}
-\bibliography{latex/ac-bo-hackathon}
+\bibliography{latex/references, latex/summaries-ref}
 
 \end{document}

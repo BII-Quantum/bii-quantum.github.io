@@ -1,0 +1,7 @@
+{
+    "project_number": 41,
+    "project_name": "Retrieval Augmented Bayesian Optimization",
+    "video_url": "https://x.com/6ojaHa/status/1773734082637095155",
+    "summary": "This research project, called RAMBO, combines retrieval-augmented generation with Bayesian optimization to enhance the initial point selection for new optimization tasks. The system leverages existing data from literature or internal databases to identify optimal starting points for Bayesian optimization processes, particularly in the context of chemical reactions.The RAMBO pipeline begins by describing the design space of a reaction to be optimized and determining which reaction parameters should be explored first. It then queries available data to extract the most relevant data points and assembles initial suggestions for the user. The system was demonstrated using a Suzuki-Miura coupling reaction as an example, which involves an extensive combinatorial space of different parameters. RAMBO can describe the design space and limit it to available compounds, providing starting parameters to optimize the reaction. The project includes a demo interface where users can input their reaction of interest, and the React system in the backend queries and extracts relevant data to form a reply containing necessary conditions to initiate the Bayesian optimization process. Users can also explore the reasoning behind the system's suggestions by analyzing the data and reactions used to generate the final answer.",
+    "status": "success"
+}
