@@ -10,7 +10,7 @@
 \RequirePackage{gensymb}
 \RequirePackage{mathtools}
 \RequirePackage[title]{appendix}
-% \RequirePackage{pgfmath}
+\RequirePackage{pgf} % Required for pgfmathparse
 \newcommand{\calcnum}[2][1]{%
     \pgfmathparse{#2}%
     \num[round-mode=places,round-precision=#1]{\pgfmathresult}%
