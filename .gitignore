@@ -141,3 +141,8 @@ pdfa.xmpi
 
 main.synctex(busy)
 main.pdf
+main.bbl
+main.blg
+main_diff.acn
+main_diff.glo
+main_diffNotes.bib
