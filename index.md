@@ -1,6 +1,6 @@
 ---
 layout: page
-title: BII Quantum Challenge 2025
+title: BII Quantum Challenge
 menu_title: Home
 menu_icon: house-door
 ---
