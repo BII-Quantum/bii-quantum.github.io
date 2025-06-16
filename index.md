@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Bayesian Optimization Hackathon for Chemistry and Materials
+title: BII Quantum Challenge 2025
 menu_title: Home
 menu_icon: house-door
 ---
@@ -27,7 +27,7 @@ menu_icon: house-door
 {% endif %}
 
 {:.secondary}
-# {{ site.event_date }}, sponsored by the Acceleration Consortium and Merck KGaA
+# {{ site.event_date }}, sponsored by the Novo Nordisk Foundation and Erhvervsstyrelsen
 
 <div class="aside">
     <h2><i class="bi bi-calendar3"></i> Event timeline</h2>
@@ -56,32 +56,35 @@ menu_icon: house-door
 
 {% if event_status != "over" %}
 
-With the emergence of new [Bayesian optimization tools for the physical sciences](https://chat.openai.com/share/ac610758-2ac8-4b38-8dd5-25e6c46ad2a6), it is important to understand their strengths and weaknesses, reduce the barrier to use, and adapt them for real-world problems. We will put these tools to the test! Scientists from the Acceleration Consortium and Merck KGaA are hosting a 2-day virtual hackathon on {{ site.event_date }} for researchers to work collaboratively in teams on projects related to Bayesian optimization.
+With the emergence of near term intermediate quantum computers and quantum-inspired algorithms powered by GPUs, it is important to understand their strengths and weaknesses, reduce the barrier to use, and adapt them for pharmaceutical development apart from drug discovery (e.g. docking and binding analysis).
+The Bio Innovation Institute (BII), Molecular Quantum Solutions (MQS), Novo Nordisk, QAI Ventures and Roche are hosting the virtual quantum challenge for researchers all over the world to work collaboratively in teams on projects. 
 
-Researchers can propose projects from [a range of topics](_/../projects.md) such as applying algorithms to existing benchmarks, developing new benchmark tasks, creating instructional tutorials, proposing real-world chemistry and materials optimization tasks, and more. After the hackathon, results will be collated and presented in a scholarly article.[<sup>(?)</sup>][faq]{:title="What is required for me to participate in the scholarly article?"} Join us to explore, collaborate, innovate, and contribute to the advancement of Bayesian optimization for the physical sciences! [This opportunity](_/../registration.md)
-is open to researchers at all levels who are interested in Bayesian optimization[<sup>(?)</sup>][faq]{:title="Are algorithms other than Bayesian optimization allowed?"} for accelerated discovery in chemistry and materials science. Prior programming experience is not required, but for code-focused projects, we recommend beginner-to-intermediate Python programming experience and basic familiarity with git and GitHub.[<sup>(?)</sup>][faq]{:title="Am I eligible to participate in the hackathon?"} Training and orientation resources are available on the [resources page](_/../resources.md).
+Researchers can propose projects with respect to this year's [challenge topic](_/../projects.md) applying quantum computing and quantum-inspired algorithms to existing benchmarks, developing new benchmarks involving quantum computing methods, creating sub-aglorithms based on quantum computing methods, proposing quantum computing based sampling and optimization methods, and more.
+After the challenge, results will be collated and secured under open-source and free license agreements (Apache/MIT) in the dedicated Quantum-Challenge-2025 repository.
+
+[This opportunity](_/../registration.md) is open to researchers at all levels who are interested in quantum computing for better informed pharmaceutical development in the low data regime.
+Prior programming experience is required and basic familiarity with git and GitHub.
+Training and orientation resources are available on the [resources page](_/../resources.md).
 
 ## Logistics
 
-The event will take place virtually, using a combination of **video
-conferencing** ([virtual Gather space](https://app.gather.town/events/nHv-tpANR6a7kCsPCgqJ)) for meetings and seminars and **discussion forums**
-([Discourse](https://accelerated-discovery.discourse.group/), [Slack](https://join.slack.com/share/enQtNjc5MjI1NTI3MDUzMy1lNjZlZWZlMGYxNzA3MTY2N2Q2MDA2ZjNlMDQxZmIyMmZkMmNhZmYyMjhhYWQyODM1NDI0Yjg0MGE4NjI3YTBl)) for ongoing comms.
+([Element](https://) for ongoing comms, especially for the participants to find other team members.
 
-<!-- [AC Discord](https://discord.gg/gZPKDH3pWU) -->
+Questions via email can be sent to quantum_challenge@mqs.dk during the two weeks Q&A phase and will be collectively answered via the Q&A page.
 
 ## Outputs
 
-By the end of the event, in addition to applying and developing algorithms, benchmarks, creating tutorials, describing real-world applications, and other projects, we hope you will have formed new connections, learned new skills, and been inspired with new ideas! We will also be working towards a scholarly article[<sup>(?)</sup>][faq]{:title="What is required for me to participate in the scholarly article?"}, and we hope you will be able to contribute to this effort.
+By the end of the event, we hope you will have formed new connections, learned new skills, and been inspired with new ideas!
 
 {% else %}
 
-With the completion of a 2-day virtual hackathon hosted by scientists from the Acceleration Consortium and Merck KGaA on {{ site.event_date }}, we thank participants for exploring, collaborating, innovating, and contributing to the advancement of Bayesian optimization for the physical sciences.
+With the completion of the BII Quantum Challenge 2025, we thank participants for exploring, collaborating, innovating, and contributing to the advancement of quantum computing and quantum-inspired methods for pharmaceutical development.
 
-During the hackathon, researchers had the opportunity to select or develop Bayesian optimization algorithms and apply them to benchmarking tasks, design new benchmark tasks, create instructional tutorials, describe real-world applications, and more. The results of this collaborative effort will be collated and presented in a scholarly article[<sup>(?)</sup>][faq]{:title="What is required for me to participate in the scholarly article?"}.
+During the hackathon, researchers had the opportunity to develop with a use-case example provided by Novo Nordisk.
 
-Although the event has concluded, the outputs from the hackathon, including applied and developed algorithms, benchmarks, and tutorials, will continue to serve as valuable resources for the research community. Outputs from teams that have opted to release their projects are available at [https://github.com/AC-BO-Hackathon](https://github.com/AC-BO-Hackathon) or through their own accounts (see individual project pages for links). We believe that through this event, new connections have been formed, new skills have been acquired, and new ideas have been inspired.
+Although the event has concluded, the outputs from the quantum challenge, including applied and developed algorithms, benchmarks, etc. will continue to serve as valuable resources for the research community. Outputs from teams that have participated  are available at [https://github.com/BII-Quantum/Quantum-Challenge-2025](https://github.com/BII-Quantum/Quantum-Challenge-2025).
 
-We want to express our gratitude to all the participants for their contributions, and we look forward to future collaborations in advancing Bayesian optimization in chemistry and materials science.
+We want to express our gratitude to all the participants for their contributions, and we look forward to future collaborations.
 {% endif %}
 
 ## Prizes
@@ -100,44 +103,49 @@ Prizes sponsored by [Matterhorn Studio](https://matterhorn.studio/) will be anno
 {% else %}
 We'd like to congratulate the following teams for their outstanding contributions to the hackathon! The top-ranked[<sup>(?)</sup>][faq]{:title="What is expected from me if I act as a judge?"} projects from the showcase and judging session are as follows:
 
-| Rank | Project # | Team Name | Project Name |
-| --- | --- | --- | --- |
-1st | [Project 23](https://ac-bo-hackathon.github.io/projects/project-23-noisy-nerds/) | Noisy Nerds | Reliable Surrogate Models of Noisy Data |
-2nd | [Project 34](https://ac-bo-hackathon.github.io/projects/project-34-boms-probs/) | BOMS Prob | Streamlining Material Discovery - Bayesian Optimization in Thermal Fluid Mixtures |
-3rd | [Project 7](https://ac-bo-hackathon.github.io/projects/project-07-surface-science-syndicate/) | Surface Science Syndicate | BayBE One More Time - Exploring Corrosion Inhibitors for Materials Design |
-4th | [Project 5](https://ac-bo-hackathon.github.io/projects/project-05-klm/) | KLM | Comparing Bayesian Optimization Methods Across Multiple Hyperparameters Against Simulated "Human" Decision-making |
-5th | [Project 8](https://ac-bo-hackathon.github.io/projects/project-08-molecular-representation/) | Molecular Representation | BO for Drug Discovery-What is the role of molecular representation? |
-6th | [Project 9](https://ac-bo-hackathon.github.io/projects/project-09-pme-no-hikari/) | PME No Hikari | Optimizing The CO2 Adsorption Capacity of Metal-Organic Frameworks Using Thompson Sampling |
-7th | [Project 11](https://ac-bo-hackathon.github.io/projects/project-11-blends/) | BlenDS | BlendDS - An intuitive specification of the design space for blends of components |
-8th | [Project 30](https://ac-bo-hackathon.github.io/projects/project-30-sero-opt/) | SERO Opt | Active learning for voltammetry waveform design |
-9th | [Project 45](https://ac-bo-hackathon.github.io/projects/project-45-general-optimizers/) | General Optimizers | Bayesian Optimization for Generality |
-10th | [Project 3](https://ac-bo-hackathon.github.io/projects/project-03-sparks-group/) | Sparks Group | Take Your Time - Measuring Optimization Performance as a Function of ACQF Optimizer Runtime |
+| Rank | Project #                                            | Team Name | Project Name |
+| ---  | ---------------------------------------------------- | --------- | ------------ |
+| 1st  | [Project xx](https://bii-quantum.github.io/projects) |           |              |
+| 2nd  | [Project xx](https://bii-quantum.github.io/projects) |           |              |
+| 3rd  | [Project xx](https://bii-quantum.github.io/projects) |           |              |
+| 4th  | [Project xx](https://bii-quantum.github.io/projects) |           |              |
+| 5th  | [Project xx](https://bii-quantum.github.io/projects) |           |              |
 
 For a full list of hackathon projects, we encourage you to check out the [projects page](_/../projects.md).
 
 {% endif %}
 
-<!-- ## Sponsors
+## Sponsors
 
-- [The Acceleration Consortium @ University of Toronto](https://acceleration.utoronto.ca/)
-- [Merck KGaA](https://www.emdgroup.com/en) -->
+- [Novo Nordisk Foundation](https://novonordiskfonden.dk/)
+- [Danish Business Authority](https://danishbusinessauthority.dk/)
+- [Danish Centre for AI Innovation - Gefion](https://dcai.dk/)
 
 ## Hosts
 
 <div style="display: flex; align-items: center; justify-content: center;">
-    <a href="https://acceleration.utoronto.ca/">
-        <img src="./assets/ac-logo.png" alt="The Acceleration Consortium @ University of Toronto" style="width:400px; margin-right: 20px;">
+    <a href="https://bii.dk/">
+        <img src="https://mva.org/wp-content/uploads/2019/03/BII_Logo_Petroleum_RGB.png" alt="BioInnovation Institute" style="width:400px; margin-right: 20px;">
     </a>
-    <a href="https://www.emdgroup.com/en">
-        <img src="./assets/emd-vibrant-m-logo.png" alt="Merck KGaA" style="width:300px; margin-left: 20px;">
+    <a href="https://mqs.dk">
+        <img src="https://mqs.dk/Images/Logo/MQS_Logo_Text_black.png" alt="Molecular Quantum Solutions (MQS)" style="width:300px; margin-left: 20px;">
     </a>
+    <a href="https://novonordisk.com/">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsYXQ2Ql2tHhxEPxX_p_wzGvDAH1B-uglemQ&s" alt="Novo Nordisk" style="width:300px; margin-left: 20px;">
+    </a>
+    <a href="https://qai-ventures.com/">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4yFd81seqGxOo0wpiPf_e27HXz6YQQHtZdw&s" alt="QAI Ventures" style="width:300px; margin-left: 20px;">
+    </a>
+    <a href="https://roche.com/">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/F._Hoffmann-La_Roche_2021_logo.svg" alt="Roche" style="width:300px; margin-left: 20px;">
+    </a> 
 </div>
 
 ## Prize Sponsor
 
 <div style="display: flex; align-items: center; justify-content: center;">
-    <a href="https://matterhorn.studio/">
-        <img src="./assets/matterhorn-studio-sheep-logo.png" alt="Matterhorn Studio" style="width:200px;">
+    <a href="https://danishbusinessauthority.dk/">
+        <img src="https://stateofgreen.com/en/wp-content/uploads/2018/05/profile_logo_6283_460x160-4-240x83.png" alt="Danish Business Authority" style="width:200px;">
     </a>
 </div>
 

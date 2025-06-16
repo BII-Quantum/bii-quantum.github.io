@@ -1,7 +1,0 @@
-{
-    "project_number": 1,
-    "project_name": "Multi-objective Benchmarking of Dragonfly against BoTorch",
-    "video_url": "https://www.youtube.com/watch?v=Z7YiruHv3eE",
-    "summary": "This research project compared the performance of two BO packages, Dragonfly\\cite{JMLRdragonfly} and BoTorch\\cite{balandat2020botorch}, in a multi-objective optimization context. The researchers optimized the Branin-Currin test function with added noise, conducting 20 trials of BO over different random seeds. Each trial used a batch size of 1 and consisted of 20 iterations, evaluating 20 candidates per iteration. The results showed that BoTorch's acquisition functions, particularly the q-noisy expected hypervolume improvement (qNEHVI)\\cite{daulton2021parallel}, outperformed Dragonfly's acquisition function. The qNEHVI acquisition function achieved the lowest log hypervolume difference on average across the trials, while Dragonfly's acquisition function struggled to surpass a randomly generated set of candidates. Visualization of the average Pareto front produced by different acquisition functions further demonstrated BoTorch's superiority, with its acquisition functions covering a larger portion of the Pareto front compared to Dragonfly. The researchers concluded that BoTorch outperformed Dragonfly within the scope of their study, but noted the need for further investigation using different batch sizes, input and output constraints, and test functions simulating chemical reactions to apply the findings to material design problems.",
-    "status": "success"
-}

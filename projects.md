@@ -1,6 +1,6 @@
 ---
 layout: project_list
-title: Hackathon projects
+title: Quantum Challenge 2025 projects
 menu_title: Projects
 menu_icon: briefcase
 ---
@@ -29,11 +29,11 @@ menu_icon: briefcase
 
 {% if event_status != "over" %}
 
-Find below the webpages for each of the hackathon projects. This list will be updated on an ongoing basis to reflect the accepted project proposals. For details on how to submit a project, see the [submission page](_/../submission.md).
+Find below the webpages for each of the projects. This list will be updated on an ongoing basis to reflect the accepted project proposals. For details on how to submit a project, see the [submission page](_/../submission.md).
 
 {% else %}
 
-The BO Hackathon for Chemistry and Materials '24 has concluded. See below for teams, project descriptions, videos, and GitHub repositories for each of the projects below.
+The BII Quantum Challenge '25 has concluded. See below for teams, project descriptions, videos, and GitHub repositories for each of the projects below.
 
 {% endif %}
 

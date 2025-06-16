@@ -1,7 +1,0 @@
-{
-    "project_number": 7,
-    "project_name": "BayBE One More Time - Exploring Corrosion Inhibitors for Materials Design",
-    "video_url": "https://www.youtube.com/watch?v=kIRxGdwmLSY",
-    "summary": "This research project explored the use of Bayesian Optimization (BO) for efficiently identifying effective corrosion inhibitors in materials design. The researchers utilized the BO implementation from the \"baby\" package to evaluate its performance on multiple experimental datasets involving different alloys, primarily aluminum-based. The study found that the choice of molecular descriptor encoding significantly impacted the optimization performance, especially for larger datasets like A1000 and A2024. The SMILES-based approach with Morgan encoding outperformed other methods for these datasets, while random sampling underperformed. Interestingly, for the A775 dataset, which had a sparse distribution of reported efficiencies and fewer data points, this trend was not observed. The researchers also explored transfer learning capabilities, using information from the A2024 alloy dataset to inform the optimization process for the A1000 dataset. This transfer learning approach outperformed the uninformed method after only 15 iterations, demonstrating its potential for accelerating the discovery of effective corrosion inhibitors in experimental settings.",
-    "status": "success"
-}

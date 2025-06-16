@@ -1,5 +1,5 @@
 ---
-title: Hackathon Code of Conduct
+title: Quantum Challenge Code of Conduct
 menu_title: Code of Conduct
 ---
 
@@ -20,7 +20,7 @@ physical and virtual spaces.
   speakers to help ensure a safe and positive experience for everyone.
 * Provide your true professional identity, affiliation, and, where appropriate,
   contact information, at registration and during attendance and participatory
-  sessions, as required.  
+  sessions, as required.
 
 ## Behaviors we encourage
 
@@ -50,7 +50,6 @@ physical and virtual spaces.
 
 If you believe someone is violating the code of conduct, please report this to
 the event organizer straight away, if you can. 
-
 
 ## Resolution of incidents
 

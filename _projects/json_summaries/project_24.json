@@ -1,7 +1,0 @@
-{
-    "project_number": 24,
-    "project_name": "ScattBO Benchmark - Bayesian optimisation for materials discovery",
-    "video_url": "https://twitter.com/SodeAndy/status/1773474538631651769",
-    "summary": "This project presents ScattBO, a Python-based benchmark that simulates a self-driving laboratory (SDL) for materials discovery. A self-driving laboratory is an autonomous platform that conducts machine learning-selected experiments to achieve a user-defined objective, such as synthesizing a specific material\\cite{szymanski_autonomous_2023}. The benchmark addresses the challenge that such SDLs can be expensive to run, making intelligent experimental planning essential, while only a few people have access to real SDLs for materials discovery. ScattBO provides an in silico simulation of an SDL where, based on synthesis parameters, the benchmark 'synthesizes' a structure, calculates the scattering pattern\\cite{johansen_gpu-accelerated_2024}, and compares it to the target structure's scattering pattern. The benchmark acknowledges that scattering data may not be sufficient to conclusively validate that the target material has been synthesized\\cite{leeman_challenges_2024}, but can include other types of data as long as they can be simulated. This makes it currently challenging to benchmark Bayesian optimization algorithms for experimental planning tasks in SDLs, and ScattBO fills this gap by providing an accessible simulation environment.",
-    "status": "success"
-}

@@ -1,5 +1,5 @@
 ---
-title: About the Hackathon
+title: About the BII Quantum Challenge
 menu_title: About
 menu_icon: globe2
 ---
@@ -26,31 +26,33 @@ menu_icon: globe2
 {% endif %}
 
 {% if event_status != "over" %}
-The AC BO Hackathon is a 2-day virtual hackathon event on {{ site.event_date }}, co-organised by the [Acceleration Consortium @ University of Toronto](https://acceleration.utoronto.ca/) and [Merck KGaA](https://www.emdgroup.com/en). The event is open to researchers at all levels who are interested in applying Bayesian optimization for accelerated discovery in chemistry and materials science.
+The BII Quantum Challenge is a virtual competition and organised by the [Bio Innovation Institute (BII)](https://), [Molecular Quantum Solutions (MQS)](https://mqs.dk), [QAI Ventures](https://), [Novo Nordisk](https://), [Roche](https://).
+The competition is open to researchers and industrial participants at all levels who are interested in applying quantum computing and quantum-inspired algorithms to pharmaceutical development.
 {% else %}
-The AC BO Hackathon was a 2-day virtual hackathon event hosted on {{ site.event_date }}, organised by the [Acceleration Consortium @ University of Toronto](https://acceleration.utoronto.ca/) and [Merck KGaA](https://www.emdgroup.com/en). The event included researchers at all levels who worked on projects applying Bayesian optimization for accelerated discovery in chemistry and materials science.
+The BII Quantum Challenge was a  hosted on {{ site.event_date }}, organised by the [Bio Innovation Institute (BII)](https://), [Molecular Quantum Solutions (MQS)](https://mqs.dk), [QAI Ventures](https://), [Novo Nordisk](https://), [Roche](https://).
+The event included researchers and industrial participants at all levels who are interested in applying quantum computing and quantum-inspired algorithms to pharmaceutical development.
 {% endif %}
 
 ### The organizing team
 
 <!-- {:.lead}
-To contact us about the hackathon, please contact us on Twitter or Slack. -->
+To contact us about the quantum challenge, please contact us via mail. -->
 
 <table class="team-list">
     <tr>
         <td>
-            <img alt="Sterling Baird" src="https://avatars.githubusercontent.com/u/45469701?s=400&u=ab65e519709791f38a49a44fc03588058407be63&v=4">
+            <img alt="Mark Nicholas Jones" src="https://avatars.githubusercontent.com/u/45469701?s=400&u=ab65e519709791f38a49a44fc03588058407be63&v=4">
         </td>
         <td>
-            <strong>Sterling Baird</strong>
+            <strong>Mark Nicholas Jones</strong>
             <span class="profile-links">
-                <a title="Profile &amp; contact" href="https://acceleration.utoronto.ca/researcher/sterling-baird"><i class="bi bi-person-lines-fill"></i></a>
-                <!-- <a title="Website" href="https://jatonline.co.uk/"><i class="bi bi-globe2"></i></a> -->
+                <a title="Profile &amp; contact" href=""><i class="bi bi-person-lines-fill"></i></a>
+                <a title="Website" href="https://mqs.dk/"><i class="bi bi-globe2"></i></a> 
                 <a title="GitHub" href="https://github.com/sgbaird"><i class="bi bi-github"></i></a>
-                <a title="Twitter" href="https://twitter.com/JGIBristol"><i class="bi bi-twitter"></i></a>
+                <a title="LinkedIn" href=""><i class="bi bi-linkedin"></i></a>
             </span>
-            <br>Acceleration Consortium, University of Toronto
-            <br>Director of Training and Programs
+            <br>Molecular Quantum Solutions (MQS)
+            <br>CEO/CTO
         </td>
     </tr>
     <!-- <tr>
@@ -116,4 +118,4 @@ To contact us about the hackathon, please contact us on Twitter or Slack. -->
 
 ### Acknowledgements
 
-We thank Ben Blaiszik, Kevin Jablonka, and the rest of the organizing team for the [LLMs in Materials and Chemistry '23 Hackathon](https://materials-data-facility.github.io/llm-hackathon/), for which this event is heavily templated off of.
+We thank Sterling G. Baird, and the rest of the organizing team for the [Bayesian Optimization Hackathon for Chemistry and Materials](https://github.com/AC-BO-Hackathon/ac-bo-hackathon.github.io) which has built on top of the [LLMs in Materials and Chemistry '23 Hackathon](https://materials-data-facility.github.io/llm-hackathon/).

@@ -1,8 +1,0 @@
-{
-    "project_number": 24,
-    "project_name": "ScattBO Benchmark - Bayesian optimisation for materials discovery",
-    "video_url": "https://github.com/AndySAnker/ScattBO/tree/main/presentation",
-    "summaries": null,
-    "status": "failed",
-    "error": "Could not determine the video ID for the URL \"https://github.com/AndySAnker/ScattBO/tree/main/presentation\"."
-}

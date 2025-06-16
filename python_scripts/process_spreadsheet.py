@@ -22,7 +22,7 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 # Go up one level to the root directory
 root_dir = os.path.dirname(script_dir)
 # Path to the CSV file
-csv_path = os.path.join(root_dir, "AC-bo-hackathon-2024.csv")
+csv_path = os.path.join(root_dir, "Quantum-Challenge-2025.csv")
 
 # Load the CSV file
 table_content = ""

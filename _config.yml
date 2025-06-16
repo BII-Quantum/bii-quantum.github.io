@@ -1,29 +1,29 @@
-title: Bayesian Optimization Hackathon for Chemistry and Materials
+title: BII Quantum Challenge 2025
 nav_title: <span class="hide-very-narrow">BO Hackathon</span><br><small><span class="hide-very-narrow">with</span> Acceleration Consortium</small>
 
-event_date: 27-28 March 2024
-event_start_date: 27 March 2024
-event_close_date: 28 March 2024
-registration_opens_date: 22 February 2024
-registration_closes_date: 27 March 2024
+event_date: 10-12 January 2026
+event_start_date: 23 June 2024
+event_close_date: 12 January 2025
+registration_opens_date: 01 July 2025
+registration_closes_date: 30 September 2025
 
-submissions_due: <a href="https://everytimezone.com/s/56bc0d6b">March 29 at 10:00 AM Eastern Time (ET)</a>
+submissions_due: <a href="https://everytimezone.com/s/56bc0d6b">September 30 at 10:00 AM Central European Time (CET)</a>
 
-author: Acceleration Consortium
-mailbox_address: sterling.baird@utoronto.ca
+author: Bio Innovation Institute (BII), Molecular Quantum Solutions (MQS)
+mailbox_address: quantum_challenge@mqs.dk
 
 description:
-  The BO Hackathon for Chemistry and Materials is a 2-day virtual event,
-  organized by the Acceleration Consortium @ University of Toronto and Merck
-  KGaA. Leading up to and at the beginning of the event, participants will
+  The BII Quantum Challenge for Pharmaceutical Development is a virtual competition combined with a pitch presentation event,
+  organized by the Bio Innovation Institute (BII), Molecular Quantum Solutions (MQS), Novo Nordisk, QAI Ventures and Roche.
+  Leading up to and at the beginning of the event, participants will
   brainstorm projects and form teams. Over the course of the event, teams will
-  work together to deliver the project and showcase their project at the end.
-  After the hackathon, results will be collated and presented in a scholarly
-  article. Come join us to explore, collaborate, innovate, and contribute to the
-  advancement of Bayesian optimization for the physical sciences!
+  work together to deliver the project and showcase their project at the end of phase 1 (July-September).
+  After phase 1, 5 teams with an academic affiliation will be selected and will retrieve access to Denmark's supercomputer Gefion (Phase 2).
+  Phase 2 will run in October/November. The winner teams will be invited to showcase their project Q1 of 2025 at a selected conference.
+  Come join us to explore, collaborate, innovate, and contribute to the advancement of quantum computing and quantum-inspired computing for pharmaceutical development!
 
-url: "https://ac-bo-hackathon.github.io/"
-github_repo: AC-BO-Hackathon
+url: "https://bii-quantum.github.io/"
+github_repo: BII-Quantum
 
 theme: minima
 
@@ -44,14 +44,14 @@ header_pages:
 #    now = event is currently happening
 #   over = event has happened
 #  (demo = show all pages to demonstrate the template)
-event_status: demo
+event_status: soon
 
 # Open and close the registration form
 #   soon = Registration has not yet opened
 #   open = Registration form is open
 # closed = Registration form is now closed
 #  (demo = show all pages to demonstrate the template)
-registration_status: demo
+registration_status: soon
 
 # Remove ".html" from default permalinks
 permalink: pretty

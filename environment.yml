@@ -1,4 +1,4 @@
-name: ac-bo-hackathon
+name: bii-quantum
 channels:
   - defaults
   - conda-forge

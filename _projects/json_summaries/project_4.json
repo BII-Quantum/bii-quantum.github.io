@@ -1,8 +1,0 @@
-{
-    "project_number": 4,
-    "project_name": "SimpleGPT-BO, Simplified GPT-Powered Bayesian Optimization",
-    "video_url": "https://www.youtube.com/watch?v=Qr2cz5lxM64&ab_channel=ArifinSan",
-    "summaries": null,
-    "status": "failed",
-    "error": "list index out of range"
-}
