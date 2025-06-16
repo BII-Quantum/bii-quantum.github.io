@@ -27,7 +27,7 @@ menu_icon: house-door
 {% endif %}
 
 {:.secondary}
-# {{ site.event_date }}, sponsored by the Novo Nordisk Foundation and Erhvervsstyrelsen
+# sponsored by the Novo Nordisk Foundation, Danish Business Authority and Danish Centre for AI Innovation
 
 <div class="aside">
     <h2><i class="bi bi-calendar3"></i> Event timeline</h2>
