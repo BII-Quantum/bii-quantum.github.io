@@ -136,8 +136,8 @@ $ git push
 
 ## Contributors
 
-* [Sterling Baird](https://github.com/sgbaird), Acceleration Consortium @ University of Toronto
+* [Mark Nicholas Jones](https://github.com/MQS-mark), Molecular Quantum Solutions (MQS), quantum_challenge@mqs.dk
 
 ## Acknowledgements
 
-This is based on the [LLM Hackathon website repository](https://github.com/materials-data-facility/llm-hackathon) [[website](https://materials-data-facility.github.io/llm-hackathon/)], which in turn is based on a template built by the [Jean Golding Institute](https://www.bristol.ac.uk/golding/) at the University of Bristol. See below for instructions regarding development using this template. To see the actual website and learn more about the hackathon, visit [https://ac-bo-hackathon.github.io/](https://ac-bo-hackathon.github.io/).
+This is based on the [Bayesian Optimization Hackathon for Chemistry and Materials](https://github.com/AC-BO-Hackathon/ac-bo-hackathon.github.io), which in turn is based on the [LLM Hackathon website repository](https://github.com/materials-data-facility/llm-hackathon) [[website](https://materials-data-facility.github.io/llm-hackathon/)], which in turn is based on a template built by the [Jean Golding Institute](https://www.bristol.ac.uk/golding/) at the University of Bristol. See below for instructions regarding development using this template. To see the actual website and learn more about the hackathon, visit [https://ac-bo-hackathon.github.io/](https://ac-bo-hackathon.github.io/).
