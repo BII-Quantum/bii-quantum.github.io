@@ -128,17 +128,8 @@ For a full list of hackathon projects, we encourage you to check out the [projec
         <img src="https://mva.org/wp-content/uploads/2019/03/BII_Logo_Petroleum_RGB.png" alt="BioInnovation Institute" style="width:400px; margin-right: 20px;">
     </a>
     <a href="https://mqs.dk">
-        <img src="https://mqs.dk/Images/Logo/MQS_Logo_Text_black.png" alt="Molecular Quantum Solutions (MQS)" style="width:300px; margin-left: 20px;">
+        <img src="https://mqs.dk/Images/Logo/MQS_Logo_Text_black.png" alt="Molecular Quantum Solutions (MQS)" style="width:400px; margin-left: 20px;">
     </a>
-    <a href="https://novonordisk.com/">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsYXQ2Ql2tHhxEPxX_p_wzGvDAH1B-uglemQ&s" alt="Novo Nordisk" style="width:300px; margin-left: 20px;">
-    </a>
-    <a href="https://qai-ventures.com/">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4yFd81seqGxOo0wpiPf_e27HXz6YQQHtZdw&s" alt="QAI Ventures" style="width:300px; margin-left: 20px;">
-    </a>
-    <a href="https://roche.com/">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/F._Hoffmann-La_Roche_2021_logo.svg" alt="Roche" style="width:300px; margin-left: 20px;">
-    </a> 
 </div>
 
 ## Prize Sponsor

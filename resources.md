@@ -1,5 +1,5 @@
 ---
-title: Hackathon resources
+title: Hackathon Resources
 menu_title: Resources
 menu_icon: journal-code
 ---
@@ -10,15 +10,11 @@ menu_icon: journal-code
 
 ## Getting Started
 
-#### [Slack](https://join.slack.com/share/enQtNjc5MjI1NTI3MDUzMy1lNjZlZWZlMGYxNzA3MTY2N2Q2MDA2ZjNlMDQxZmIyMmZkMmNhZmYyMjhhYWQyODM1NDI0Yjg0MGE4NjI3YTBl) - Join the hackathon's Slack channel to connect, ask questions, and form teams
+#### [Element]() - Join the challenge Element community room to connect and form teams
 
 #### [Project proposals](_/../submission.md) - team leaders should submit their project proposals using the instructions here
 
-#### [Gather](https://app.gather.town/events/nHv-tpANR6a7kCsPCgqJ) - Add the Gather Town event to your calendar
-
-####  [Accelerated discovery forum](https://accelerated-discovery.discourse.group/) - create an account to join the discussion forums
-
-#### [Bayesian optimization](https://youtu.be/IVaWl2tL06c) - Watch the Accelerate '23 training workshop on Bayesian optimization below
+#### [PK/PD Introduction Video]() - ...
 
 {% include youtube.html video="IVaWl2tL06c" title="A Gentle Introduction to Bayesian Optimization" %}
 
@@ -28,14 +24,7 @@ menu_icon: journal-code
 
 ## Orientation Modules
 
-Please complete the following orientation assignments in preparation for the hackathon to familiarize the tools and concepts you'll need. You will need to [create a GitHub account](https://github.com/join) to access these resources. If you are already familiar with git and GitHub, you may skip directly to "Intro to GitHub Classroom". When prompted, please select an identifier from the list that's given. In addition to these orientation modules, we also recommend that you [familiarize yourself with Markdown syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) if this is new to you.
-
-<table>
-    <tr>
-        <td><a href="https://classroom.github.com/a/2rswOlPi">📝 Intro to Git and GitHub</a></td>
-        <td><a href="https://classroom.github.com/a/EaTuZ8L8">📝 Intro to GitHub Classroom</a></td>
-    </tr>
-</table>
+Please complete the following orientation assignments in preparation for the hackathon to familiarize the tools and concepts you'll need. You will need to [create a GitHub account](https://github.com/join) to access these resources. In addition to these orientation modules, we also recommend that you [familiarize yourself with Markdown syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) if this is new to you.
 
 For those looking for a refresher on Python programming or to implement a simple BO example, see the following GitHub Classroom assignments:
 
