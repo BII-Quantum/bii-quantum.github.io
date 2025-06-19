@@ -91,17 +91,11 @@ We want to express our gratitude to all the participants for their contributions
 
 {% if event_status != "over" %}
 
-Prizes sponsored by [Matterhorn Studio](https://matterhorn.studio/) will be announced the day after the hackathon for the highest-ranked[<sup>(?)</sup>][faq]{:title="What is expected from me if I act as a judge?"} projects based on the project showcase and judging session on Day 2 of [agenda](_/../agenda.md). Tentative prize tiers are below, and submissions from any project topic are eligible. Each prize will be awarded in the form of a gift card.
+Gefion access has been given to the five highest-ranked projects [agenda](_/../agenda.md).
 
-| Rank | Prize |
-| --- | --- |
-| First-ranked | Up to CA$300 gift card per team member (max CA$1000) |
-| Second-ranked | Up to CA$150 gift card per team member (max CA$500) |
-| Third-ranked | Up to CA$75 gift card per team member (max CA$250) |
-| 4th-10th ranked | Up to CA$35 gift card per team member (max CA$125) |
 
 {% else %}
-We'd like to congratulate the following teams for their outstanding contributions to the hackathon! The top-ranked[<sup>(?)</sup>][faq]{:title="What is expected from me if I act as a judge?"} projects from the showcase and judging session are as follows:
+Five teams will be selected for their outstanding contributions during the phase 1 of the challenge and will receive access to Gefion during phase 2! The top-ranked projects from the showcase and judging session will be highlighted here:
 
 | Rank | Project #                                            | Team Name | Project Name |
 | ---  | ---------------------------------------------------- | --------- | ------------ |
@@ -111,7 +105,7 @@ We'd like to congratulate the following teams for their outstanding contribution
 | 4th  | [Project xx](https://bii-quantum.github.io/projects) |           |              |
 | 5th  | [Project xx](https://bii-quantum.github.io/projects) |           |              |
 
-For a full list of hackathon projects, we encourage you to check out the [projects page](_/../projects.md).
+For a full list of the challenge projects, we encourage you to check out the [projects page](_/../projects.md).
 
 {% endif %}
 
