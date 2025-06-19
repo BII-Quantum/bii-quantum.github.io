@@ -45,7 +45,7 @@ hackathon event which will take part from {{ site.event_date }}.
   <a class="btn disabled">Registration opens soon</a>
 {% endif %}
 {% if registration_status == "open" or registration_status == "demo" %}
-  [Register now](https://www.eventbrite.ca/e/bo-hackathon-for-chemistry-and-materials-tickets-837748407037){:.btn target="_blank"}
+  [Register now](https://www.eventbrite.com/...){:.btn target="_blank"}
 {% endif %}
 {% if registration_status == "closed" or registration_status == "demo" %}
   <a class="btn disabled">Registration has closed</a>

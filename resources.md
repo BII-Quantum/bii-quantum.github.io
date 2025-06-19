@@ -1,5 +1,5 @@
 ---
-title: Hackathon Resources
+title: Quantum Challenge Resources
 menu_title: Resources
 menu_icon: journal-code
 ---
@@ -12,11 +12,11 @@ menu_icon: journal-code
 
 #### [Element]() - Join the challenge Element community room to connect and form teams
 
-#### [Project proposals](_/../submission.md) - team leaders should submit their project proposals using the instructions here
+#### [Project Proposals](_/../submission.md) - team leaders should submit their project proposals using the instructions here
 
-#### [PK/PD Introduction Video]() - ...
+#### [Topical Project Introduction Video]() - ...
 
-{% include youtube.html video="IVaWl2tL06c" title="A Gentle Introduction to Bayesian Optimization" %}
+{% include youtube.html video="IVaWl2tL06c" title="..." %}
 
 </li>
 
@@ -26,32 +26,25 @@ menu_icon: journal-code
 
 Please complete the following orientation assignments in preparation for the hackathon to familiarize the tools and concepts you'll need. You will need to [create a GitHub account](https://github.com/join) to access these resources. In addition to these orientation modules, we also recommend that you [familiarize yourself with Markdown syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) if this is new to you.
 
-For those looking for a refresher on Python programming or to implement a simple BO example, see the following GitHub Classroom assignments:
+For those looking for a refresher on Python programming or to implement a simple ... example, see the following links:
 
-<table>
-    <tr>
-        <td><a href="https://classroom.github.com/a/XFCJVXYP">📝 Python Refresher</a></td>
-        <td><a href="https://classroom.github.com/a/TlzXth_g">📝 Simple Bayesian optimization script</a></td>
-    </tr>
-</table>
 
-{% include youtube.html video="w3jLJU7DT5E" title="What is GitHub?" %}
+{% include youtube.html video="" title="..." %}
 
 </li>
 
 <li class="resource-block" markdown="1">
 
-## Bayesian optimization
+## Quantum computing
 
-#### [Bayes Rule by 3Blue1Brown](https://youtu.be/HZGCoVF3YvM) -- explanation of the fundamental concept behind Bayesian methods
+### Introduction
 
-{% include youtube.html video="HZGCoVF3YvM" title="" %}
+### Simulators
 
-#### [A Visual Exploration of Gaussian Processes](https://distill.pub/2019/visual-exploration-gaussian-processes/) - An explanation of a commonly used predictive model in Bayesian optimization with visualizations and mathematical rigor
+### Quantum-inspired computing
 
-#### [Exploring Bayesian Optimization](https://distill.pub/2020/bayesian-optimization/) - An overview of active learning and Bayesian optimization with visualizations and mathematical rigor
+### Quantum computers and simulators as samplers
 
-#### [Bayesian Optimization Book](https://bayesoptbook.com/) - For those that REALLY want to understand BO, this is a self-contained, comprehensive deep dive that builds up basic principles from "scratch" and delves into advanced topics. The book is free and open-source.
 
 </li>
 
@@ -83,7 +76,7 @@ If you have no prior programming experience, you may wish to start with the [Pyt
 
 <li class="resource-block" markdown="1">
 
-## BO Tools
+## Quantum Computing Tools/Packages
 
 Use of the tools listed on this page is not a requirement. A diverse set of packages and implementations is encouraged. Likewise, multiple teams using the same package is not a problem, in part because implementations can remain private during the course of the hackathon.[<sup>(?)</sup>][faq]{:title="Does my GitHub repository need to be public?"} If you'd like to see a specific tool listed here, please navigate to the "Improve this page" link at the bottom of the page and open a pull request. See also the [Acceleration Consortium's curated list of optimization tools](https://github.com/AccelerationConsortium/awesome-self-driving-labs#optimization).
 
@@ -91,17 +84,16 @@ Use of the tools listed on this page is not a requirement. A diverse set of pack
 
 <li class="resource-block" markdown="1">
 
-#### [BayBE](https://github.com/emdgroup/baybe)
+#### [Qiskit](https://github.com/...)
 
-[![baybe](./assets/baybe.png)](https://github.com/emdgroup/baybe)
+[![baybe](./assets/....png)](https://github.com/...)
 
-This hackathon is co-organized by Merck KGaA. You may consider using an internal Merck tool that was recently open-sourced, called the [Bayesian optimization BackEnd (BayBE)](https://github.com/emdgroup/baybe). This tool focuses on real-world experimental campaigns in the physical sciences with support for integrating domain knowledge through custom parameter encodings and built-in chemical encodings. In addition, it allows for custom surrogate models, mixed variable types, and transfer learning.
-
+...
 </li>
 
 <li class="resource-block" markdown="1">
 
-#### [Adaptive Experiment (Ax) Platform](https://ax.dev/)
+#### [CudaQ](https://ax.dev/)
 
 [![ax](./assets/ax-black-background.png)](https://ax.dev/)
 
@@ -111,9 +103,9 @@ The [Ax Platform](https://ax.dev/) is a tool developed by Meta's Adaptive Experi
 
 <li class="resource-block" markdown="1">
 
-#### [Honegumi](https://honegumi.readthedocs.io/en/latest/)
+#### [Pennylane](https://pennylane)
 
-[![honegumi](./assets/honegumi.png)](https://honegumi.readthedocs.io/en/latest/)
+[![honegumi](./assets/...)](https://....)
 
 [Honegumi](https://honegumi.readthedocs.io/en/latest/) (pronounced "ho neh goo mee", also referred to as "honey gummy"), deriving from the Japanese word for _skeletal framework_, is a package for interactively creating API tutorials with a focus on optimization packages. You use an interactive grid to select Bayesian optimization characteristics specific to your task and watch the corresponding template dynamically appear. "Open in Colab" and "Open in GitHub" links are also dynamically generated for each template. [Honegumi pairs particularly well with LLMs](https://youtu.be/rnI2BvGgP9o) to adapt the templates to real-world tasks.
 
@@ -142,7 +134,7 @@ To make this more concrete, see [our implementation of the Branin function](http
 
 ## Guidelines
 
-### [Submission](_/../submission.md) - The hackathon's workflow for submissions, including project topics and proposal instructions
+### [Submission](_/../submission.md) - The quantum challenge workflow for phase 1 submissions, including the project topic and proposal instructions
 
 </li>
 

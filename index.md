@@ -128,7 +128,7 @@ For a full list of hackathon projects, we encourage you to check out the [projec
         <img src="https://mva.org/wp-content/uploads/2019/03/BII_Logo_Petroleum_RGB.png" alt="BioInnovation Institute" style="width:400px; margin-right: 20px;">
     </a>
     <a href="https://mqs.dk">
-        <img src="https://mqs.dk/Images/Logo/MQS_Logo_Text_black.png" alt="Molecular Quantum Solutions (MQS)" style="width:400px; margin-left: 20px;">
+        <img src="https://mqs.dk/Images/Logo/MQS_Logo_Text_black.png" alt="Molecular Quantum Solutions (MQS)" style="width:500px; margin-left: 20px;">
     </a>
 </div>
 
