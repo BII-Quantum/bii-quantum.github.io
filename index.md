@@ -1,6 +1,6 @@
 ---
 layout: page
-title: BII Quantum Challenge
+title: Quantum Innovation Challenge
 menu_title: Home
 menu_icon: house-door
 ---
@@ -27,7 +27,7 @@ menu_icon: house-door
 {% endif %}
 
 {:.secondary}
-# sponsored by the Novo Nordisk Foundation, Danish Business Authority and Danish Centre for AI Innovation
+# sponsored by the Novo Nordisk Foundation, Danish Business Authority and Danish Centre for AI Innovation - Gefion
 
 <div class="aside">
     <h2><i class="bi bi-calendar3"></i> Event timeline</h2>
@@ -50,7 +50,7 @@ menu_icon: house-door
         <dd>Applications close</dd>
 
         <dt>{{ site.event_date }}</dt>
-        <dd>Hackathon date</dd>
+        <dd>Quantum Innovation Challenge Final Projects Presentation</dd>
     </dl>
 </div>
 

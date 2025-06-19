@@ -16,7 +16,7 @@ menu_icon: journal-code
 
 #### [Topical Project Introduction Video]() - ...
 
-{% include youtube.html video="IVaWl2tL06c" title="..." %}
+{% include youtube.html video="" title="..." %}
 
 </li>
 

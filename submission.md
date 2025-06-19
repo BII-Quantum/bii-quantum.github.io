@@ -6,7 +6,7 @@ menu_icon: cloud-arrow-up
 
 Below the project topic of this year's Quantum Innovation Challenge is presented.
 
-## Quantum Innovation Challenge 2025: Applying Algorithms to Benchmark Tasks (`real-world`)
+## Quantum Innovation Challenge 2025: Applying Algorithms to Benchmark Tasks
 
 
 ## Project initialization
@@ -152,8 +152,8 @@ This pull request will be considered your final submission for phase 1 of the ch
 - Skillset: Does the team cover the necessary experience in quantum/AI techniques?
 
 ### 6. Proof of Concept / Prototype (non-mandatory; 0-5pts)
-    • Prototype Implementation: Has the team built a minimal working proof of concept? 
-    • Initial Results: Are preliminary results provided?
-    • Demonstration of Key Concepts: Does the proof of concept validate core ideas effectively?
+- Prototype Implementation: Has the team built a minimal working proof of concept? 
+- Initial Results: Are preliminary results provided?
+- Demonstration of Key Concepts: Does the proof of concept validate core ideas effectively?
 
 [faq]: {{ site.baseurl }}{% link faq.md %}

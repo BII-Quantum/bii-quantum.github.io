@@ -1,5 +1,5 @@
 ---
-title: About the BII Quantum Challenge
+title: About the Quantum Innovation Challenge
 menu_title: About
 menu_icon: globe2
 ---
@@ -26,10 +26,10 @@ menu_icon: globe2
 {% endif %}
 
 {% if event_status != "over" %}
-The BII Quantum Challenge is a virtual competition and organised by the [Bio Innovation Institute (BII)](https://), [Molecular Quantum Solutions (MQS)](https://mqs.dk), [QAI Ventures](https://), [Novo Nordisk](https://), [Roche](https://).
+The Quantum Innovation Challenge is a virtual competition and organised by the [Bio Innovation Institute (BII)](https://), [Molecular Quantum Solutions (MQS)](https://mqs.dk), [QAI Ventures](https://).
 The competition is open to researchers and industrial participants at all levels who are interested in applying quantum computing and quantum-inspired algorithms to pharmaceutical development.
 {% else %}
-The BII Quantum Challenge was a  hosted on {{ site.event_date }}, organised by the [Bio Innovation Institute (BII)](https://), [Molecular Quantum Solutions (MQS)](https://mqs.dk), [QAI Ventures](https://), [Novo Nordisk](https://), [Roche](https://).
+The Quantum Innovation Challenge was a hosted on {{ site.event_date }}, organised by the [Bio Innovation Institute (BII)](https://), [Molecular Quantum Solutions (MQS)](https://mqs.dk), [QAI Ventures](https://).
 The event included researchers and industrial participants at all levels who are interested in applying quantum computing and quantum-inspired algorithms to pharmaceutical development.
 {% endif %}
 
@@ -41,7 +41,7 @@ To contact us about the quantum challenge, please contact us via mail. -->
 <table class="team-list">
     <tr>
         <td>
-            <img alt="Mark Nicholas Jones" src="https://avatars.githubusercontent.com/u/45469701?s=400&u=ab65e519709791f38a49a44fc03588058407be63&v=4">
+            <img alt="Mark Nicholas Jones" src="https://avatars.githubusercontent.com/u/61972059?v=4">
         </td>
         <td>
             <strong>Mark Nicholas Jones</strong>
@@ -55,36 +55,37 @@ To contact us about the quantum challenge, please contact us via mail. -->
             <br>CEO/CTO
         </td>
     </tr>
-    <!-- <tr>
+    <tr>
         <td>
-            <img alt="Andrew White" src="https://pbs.twimg.com/profile_images/1610864530216591361/9_HA-bt8_400x400.jpg">
+            <img alt="Francesco Russo" src="...">
         </td>
         <td>
-            <strong>Andrew White</strong>
+            <strong>Francesco Russo</strong>
              <span class="profile-links">
-                <a title="Website" href="https://thewhitelab.org/"><i class="bi bi-globe2"></i></a>
-                <a title="GitHub" href="https://github.com/whitead"><i class="bi bi-github"></i></a>
-                <a title="Twitter" href="https://twitter.com/andrewwhite01"><i class="bi bi-twitter"></i></a>
+                <a title="Website" href="..."><i class="bi bi-globe2"></i></a>
+                <a title="GitHub" href="..."><i class="bi bi-github"></i></a>
+                <a title="LinkedIn" href="..."><i class="bi bi-twitter"></i></a>
             </span>
-            <br>University of Rochester, Vial
-            <br>Professor, VP of AI
+            <br>Novo Nordisk Foundation
+            <br>Scientific Manager
         </td>
     </tr>
     <tr>
         <td>
-            <img alt="Kevin Jablonka" src="../assets/kevin.jpg">
+            <img alt="Cathal Mahon" src="...">
         </td>
         <td>
-            <strong>Kevin M Jablonka</strong>
+            <strong>Cathal Mahon</strong>
             <span class="profile-links">
-                <a title="Website" href="https://kjablonka.com/"><i class="bi bi-globe2"></i></a>
-                <a title="GitHub" href="https://github.com/kjappelbaum"><i class="bi bi-github"></i></a>
-                <a title="Twitter" href="https://twitter.com/kmjablonka"><i class="bi bi-twitter"></i></a>
+                <a title="Website" href="..."><i class="bi bi-globe2"></i></a>
+                <a title="GitHub" href="..."><i class="bi bi-github"></i></a>
+                <a title="LinkedIn" href="..."><i class="bi bi-twitter"></i></a>
             </span>
-            <br>EPFL
-            <br>PhD Student
+            <br>Bio Innovation Institute
+            <br>Chief Business Officer
         </td>
     </tr>
+    <!--
     <tr>
         <td>
             <img alt="KJ Schmidt" src="../assets/kj.jpeg">
